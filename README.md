@@ -15,7 +15,7 @@ npm install sails-stdlib --save
 ## Usage
 
 ```js
-var stdlib = require('stdlib');
+var stdlib = require('sails-stdlib');
 var Gravatar = stdlib('gravatar'); // << just like doing `require('machinepack-gravatar');`
 var Mailgun = stdlib('mailgun'); // << just like doing `require('machinepack-mailgun');`
 ```
