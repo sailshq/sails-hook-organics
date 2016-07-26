@@ -114,31 +114,33 @@ module.exports = function loadStdlibPkg (slug){
 // Expose the version string for debugging purposes.
 module.exports.VERSION = require('./package.json').version;
 
-// Expose the list of machinepacks bundled in this version of the standard library.
-module.exports.PACKS = [
-  'machinepack-ifthen',
-  'machinepack-strings',
-  'machinepack-numbers',
-  'machinepack-booleans',
-  'machinepack-dictionaries',
-  'machinepack-arrays',
-  'machinepack-json',
-  'machinepack-datetime/',
-  'machinepack-math',
-  'machinepack-paths',
-  'machinepack-urls',
-  'machinepack-emailaddresses',
-  'machinepack-fs',
-  'machinepack-http',
-  'machinepack-process',
-  'machinepack-console',
-  'machinepack-util',
-  'machinepack-waterline',
-  'machinepack-sockets',
-  'machinepack-reqres',
-  'machinepack-sessionauth',
-  'machinepack-passwords',
-  'machinepack-mailgun',
-  'machinepack-gravatar'
-];
+// Expose the set of machinepacks bundled in this version of the standard library.
+// Purely for convenience, each key (LHS) is the full project slug, and the shorthand
+// slug is the value on the RHS.
+module.exports.PACKS = {
+  'machinepack-ifthen'          : 'ifthen',
+  'machinepack-strings'         : 'strings',
+  'machinepack-numbers'         : 'numbers',
+  'machinepack-booleans'        : 'booleans',
+  'machinepack-dictionaries'    : 'dictionaries',
+  'machinepack-arrays'          : 'arrays',
+  'machinepack-json'            : 'json',
+  'machinepack-datetime'        : 'datetime',
+  'machinepack-math'            : 'math',
+  'machinepack-paths'           : 'paths',
+  'machinepack-urls'            : 'urls',
+  'machinepack-emailaddresses'  : 'emailaddresses',
+  'machinepack-fs'              : 'fs',
+  'machinepack-http'            : 'http',
+  'machinepack-process'         : 'process',
+  'machinepack-console'         : 'console',
+  'machinepack-util'            : 'util',
+  'machinepack-waterline'       : 'waterline',
+  'machinepack-sockets'         : 'sockets',
+  'machinepack-reqres'          : 'reqres',
+  'machinepack-sessionauth'     : 'sessionauth',
+  'machinepack-passwords'       : 'passwords',
+  'machinepack-mailgun'         : 'mailgun',
+  'machinepack-gravatar'        : 'gravatar',
+};
 
