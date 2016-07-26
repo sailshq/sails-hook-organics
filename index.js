@@ -1,4 +1,11 @@
 /**
+ * Module dependencies
+ */
+
+var PACKAGE_JSON = require('./package.json');
+
+
+/**
  * stdlib()
  *
  * Load a package from the standard library.
@@ -112,35 +119,20 @@ module.exports = function loadStdlibPkg (slug){
 };
 
 // Expose the version string for debugging purposes.
-module.exports.VERSION = require('./package.json').version;
+module.exports.VERSION = PACKAGE_JSON.version;
 
 // Expose the set of machinepacks bundled in this version of the standard library.
-// Purely for convenience, each key (LHS) is the full project slug, and the shorthand
-// slug is the value on the RHS.
-module.exports.PACKS = {
-  'machinepack-ifthen'          : 'ifthen',
-  'machinepack-strings'         : 'strings',
-  'machinepack-numbers'         : 'numbers',
-  'machinepack-booleans'        : 'booleans',
-  'machinepack-dictionaries'    : 'dictionaries',
-  'machinepack-arrays'          : 'arrays',
-  'machinepack-json'            : 'json',
-  'machinepack-datetime'        : 'datetime',
-  'machinepack-math'            : 'math',
-  'machinepack-paths'           : 'paths',
-  'machinepack-urls'            : 'urls',
-  'machinepack-emailaddresses'  : 'emailaddresses',
-  'machinepack-fs'              : 'fs',
-  'machinepack-http'            : 'http',
-  'machinepack-process'         : 'process',
-  'machinepack-console'         : 'console',
-  'machinepack-util'            : 'util',
-  'machinepack-waterline'       : 'waterline',
-  'machinepack-sockets'         : 'sockets',
-  'machinepack-reqres'          : 'reqres',
-  'machinepack-sessionauth'     : 'sessionauth',
-  'machinepack-passwords'       : 'passwords',
-  'machinepack-mailgun'         : 'mailgun',
-  'machinepack-gravatar'        : 'gravatar',
-};
-
+// Purely for convenience, each key (LHS) is the shorthand slug, and the value (RHS)
+// is a dictionary containing the full project slug (aka package name) as well as the
+// package version.
+module.exports.PACKS = (function (){
+  var _packs = {};
+  Object.keys(PACKAGE_JSON.dependencies).forEach(function (pkgName){
+    var shorthandSlug = pkgName.replace(/^machinepack-/, '');
+    _packs[shorthandSlug] = {
+      packageName: pkgName,
+      version: PACKAGE_JSON.dependencies[pkgName]
+    };
+  });
+  return _packs;
+})();
