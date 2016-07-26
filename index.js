@@ -122,17 +122,11 @@ module.exports = function loadStdlibPkg (slug){
 module.exports.VERSION = PACKAGE_JSON.version;
 
 // Expose the set of machinepacks bundled in this version of the standard library.
-// Purely for convenience, each key (LHS) is the shorthand slug, and the value (RHS)
-// is a dictionary containing the full project slug (aka package name) as well as the
-// package version.
 module.exports.PACKS = (function (){
   var _packs = {};
   Object.keys(PACKAGE_JSON.dependencies).forEach(function (pkgName){
     var shorthandSlug = pkgName.replace(/^machinepack-/, '');
-    _packs[shorthandSlug] = {
-      packageName: pkgName,
-      version: PACKAGE_JSON.dependencies[pkgName]
-    };
+    _packs[shorthandSlug] = PACKAGE_JSON.dependencies[pkgName];
   });
   return _packs;
 })();
