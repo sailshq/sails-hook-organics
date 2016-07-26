@@ -76,5 +76,5 @@ module.exports = function loadStdlibPkg (slug){
 
 };
 
-// Expose the version number for debugging purposes.
+// Expose the version string for debugging purposes.
 module.exports.VERSION = require('./package.json').version;
