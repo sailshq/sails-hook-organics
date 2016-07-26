@@ -105,6 +105,11 @@ If you see how to fix the problem and have a moment to prepare a patch, feel fre
 > vigilant about the effect of any usage change in the grand scheme of the library.
 
 
+#### I have an idea for how to improve...
+
+We'd like to hear it!  The best way to share your ideas is to contribute (see below).
+
+
 #### I wish this supported...
 
 We are constantly looking for ways to improve this library. If we're missing something you need from a particular pack,
@@ -112,42 +117,9 @@ tweet at [@sailsjs](https://twitter.com/sailsjs) to explain your use case and we
 If you're in a hurry, just look up the repo for the package in question from the list below, then create a fork.
 
 
-#### I have an idea for how to improve...
+#### Where's the code?
 
-We'd like to hear it!  The best way to share your ideas is to contribute (see below).
-
-
-#### Does this use semver?
-
-Dependency versions are pinned, and all releases of `sails-stdlib` are carefully tested to ensure strict semantic versioning.
-
-
-#### Does this support custom builds?
-
-You can install and use any of the packages in this repo individually.  Just require the machinepack directly.
-
-
-#### How do I run the tests?
-
-Tests for each package are implemented in its repo.
-
-
-#### What does the future hold?
-
-The roadmap for this library is flexible and we're open to ideas.  The important thing is that we remain relentlessly focused on stability and versatility,
-while keeping the library relatively lightweight and the usage intuitive.  Secondary to that, most of the immediate-term
-improvements we're interested in making are related to performance.
-
-
-#### I'd like to contribute.
-
-Awesome!  Tweet [@sailsjs](https://twitter.com/sailsjs) and let us know the minimum # of hours per week you'll
-be able to commit, and someone from the core team will contact you ASAP. 
-
-
-
-
-## Repos
+Each package in the standard library lives in its own repository:
 
 ##### General
 - [ifthen](https://github.com/treelinehq/machinepack-ifthen)
@@ -178,6 +150,35 @@ be able to commit, and someone from the core team will contact you ASAP.
 - [passwords](https://github.com/mikermcneil/machinepack-passwords)
 - [mailgun](https://github.com/particlebanana/machinepack-mailgun)
 - [gravatar](https://github.com/irlnathan/machinepack-gravatar)
+
+
+
+#### Does this use semver?
+
+Dependency versions are pinned, and all releases of `sails-stdlib` are carefully tested to ensure strict semantic versioning.
+
+
+#### Does this support custom builds?
+
+You can install and use any of the packages in this repo individually.  Just require the machinepack directly.
+
+
+#### How do I run the tests?
+
+Tests for each package are implemented in its repo.
+
+
+#### What does the future hold?
+
+The roadmap for this library is flexible and we're open to ideas.  The important thing is that we remain relentlessly focused on stability and versatility,
+while keeping the library relatively lightweight and the usage intuitive.  Secondary to that, most of the immediate-term
+improvements we're interested in making are related to performance.
+
+
+#### I'd like to contribute.
+
+Awesome!  Tweet [@sailsjs](https://twitter.com/sailsjs) and let us know the minimum # of hours per week you'll
+be able to commit, and someone from the core team will contact you ASAP. 
 
 
 
