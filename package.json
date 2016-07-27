@@ -19,6 +19,8 @@
   "license": "",
   "dependencies": {
     "machinepack-arrays": "5.4.0",
+    "machinepack-booleans": "treelinehq/machinepack-booleans",
+    "machinepack-console": "treelinehq/machinepack-console",
     "machinepack-datetime": "1.4.0",
     "machinepack-dictionaries": "2.2.0",
     "machinepack-emailaddresses": "0.4.0",
@@ -29,14 +31,17 @@
     "machinepack-json": "2.0.1",
     "machinepack-mailgun": "0.5.0",
     "machinepack-math": "1.2.0",
+    "machinepack-numbers": "treelinehq/machinepack-numbers",
     "machinepack-passwords": "2.3.0",
     "machinepack-paths": "2.0.3",
     "machinepack-process": "2.0.2",
+    "machinepack-reqres": "treelinehq/machinepack-reqres",
     "machinepack-sessionauth": "0.3.2",
     "machinepack-sockets": "1.2.1",
     "machinepack-strings": "5.1.0",
     "machinepack-urls": "5.0.0",
-    "machinepack-util": "6.1.2"
+    "machinepack-util": "6.1.2",
+    "machinepack-waterline": "treelinehq/machinepack-waterline"
   },
   "repository": {
     "type": "git",
