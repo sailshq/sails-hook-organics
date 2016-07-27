@@ -152,6 +152,10 @@ Each package in the standard library lives in its own repository:
 - [gravatar](https://github.com/irlnathan/machinepack-gravatar)
 
 
+#### Where's the changelog?
+
+The [CHANGELOG.md file in this repo](./CHANGELOG.md) contains a record of usage changes for all of the packs in the standard library (in other words, any minor or major version bumps to the dependencies listed in the package.json file).  This makes the changelog more accurate and easier to update, since it saves contributors from having to maintain individual changelogs in at least 20 different repos.
+
 
 #### Does this use semver?
 
