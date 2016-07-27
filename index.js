@@ -122,6 +122,7 @@ module.exports = function loadStdlibPkg (slug){
 module.exports.VERSION = PACKAGE_JSON.version;
 
 // Expose the set of machinepacks bundled in this version of the standard library.
+// (this is purely for convenience)
 module.exports.PACKS = (function (){
   var _packs = {};
   Object.keys(PACKAGE_JSON.dependencies).forEach(function (pkgName){
