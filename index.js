@@ -88,18 +88,6 @@ module.exports = function loadStdlibPkg (slug){
 
     // for...
     // App Servers & Web APIs
-    case 'waterline':
-      return require('machinepack-waterline');
-
-    case 'sockets':
-      return require('machinepack-sockets');
-
-    case 'reqres':
-      return require('machinepack-reqres');
-
-    case 'sessionauth':
-      return require('machinepack-sessionauth');
-
     case 'passwords':
       return require('machinepack-passwords');
 
@@ -113,7 +101,7 @@ module.exports = function loadStdlibPkg (slug){
     // for...
     // Miscreants
     default:
-      throw new Error('Unrecognized package slug: `'+slug+'`.  Please choose from the list of packages at https://github.com/sailsjs/stdlib');
+      throw new Error('Unrecognized package slug: `'+slug+'`.  Please choose from the list of packages at https://github.com/sailsjs/stdlib/tree/generic-only');
   }
 
 };

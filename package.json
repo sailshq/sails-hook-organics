@@ -1,21 +1,15 @@
 {
-  "name": "sails-stdlib",
+  "name": "stdlib",
   "version": "0.3.6",
-  "description": "Standard library for Node/Sails applications. Hand-picked and maintained by the Sails.js core team.",
+  "description": "The framework-agnostic subset of sails-stdlib.  Hand-picked and maintained by the Sails.js core team.",
   "scripts": {
     "test": "echo 'See the section on 'How do I run the tests?' in README.md.'",
-    "upgrade": "npm install machinepack-arrays@latest machinepack-booleans@latest machinepack-console@latest machinepack-datetime@latest machinepack-dictionaries@latest machinepack-emailaddresses@latest machinepack-fs@latest machinepack-gravatar@latest machinepack-http@latest machinepack-ifthen@latest machinepack-json@latest machinepack-mailgun@latest machinepack-math@latest machinepack-numbers@latest machinepack-passwords@latest machinepack-paths@latest machinepack-process@latest machinepack-reqres@latest machinepack-sessionauth@latest machinepack-sockets@latest machinepack-strings@latest machinepack-urls@latest machinepack-util@latest machinepack-waterline@latest --save --save-exact",
-    "upgrade-dev": "npm install machinepack-arrays@treelinehq/machinepack-arrays machinepack-booleans@treelinehq/machinepack-booleans machinepack-console@treelinehq/machinepack-console machinepack-datetime@sgress454/machinepack-datetime machinepack-dictionaries@treelinehq/machinepack-dictionaries machinepack-emailaddresses@mikermcneil/machinepack-emailaddresses machinepack-fs@mikermcneil/machinepack-fs machinepack-gravatar@irlnathan/machinepack-gravatar machinepack-http@mikermcneil/machinepack-http machinepack-ifthen@treelinehq/machinepack-ifthen machinepack-json@treelinehq/machinepack-json machinepack-mailgun@particlebanana/machinepack-mailgun machinepack-math@treelinehq/machinepack-math machinepack-numbers@treelinehq/machinepack-numbers machinepack-passwords@mikermcneil/machinepack-passwords machinepack-paths@treelinehq/machinepack-paths machinepack-process@treelinehq/machinepack-process machinepack-reqres@treelinehq/machinepack-reqres machinepack-sessionauth@treelinehq/machinepack-sessionauth machinepack-sockets@sgress454/machinepack-sockets machinepack-strings@treelinehq/machinepack-strings machinepack-urls@mikermcneil/machinepack-urls machinepack-util@treelinehq/machinepack-util machinepack-waterline@treelinehq/machinepack-waterline --save --save-exact"
+    "upgrade": "npm install machinepack-arrays@latest machinepack-booleans@latest machinepack-console@latest machinepack-datetime@latest machinepack-dictionaries@latest machinepack-emailaddresses@latest machinepack-fs@latest machinepack-gravatar@latest machinepack-http@latest machinepack-ifthen@latest machinepack-json@latest machinepack-mailgun@latest machinepack-math@latest machinepack-numbers@latest machinepack-passwords@latest machinepack-paths@latest machinepack-process@latest machinepack-strings@latest machinepack-urls@latest machinepack-util@latest --save --save-exact",
+    "upgrade-dev": "npm install machinepack-arrays@treelinehq/machinepack-arrays machinepack-booleans@treelinehq/machinepack-booleans machinepack-console@treelinehq/machinepack-console machinepack-datetime@sgress454/machinepack-datetime machinepack-dictionaries@treelinehq/machinepack-dictionaries machinepack-emailaddresses@mikermcneil/machinepack-emailaddresses machinepack-fs@mikermcneil/machinepack-fs machinepack-gravatar@irlnathan/machinepack-gravatar machinepack-http@mikermcneil/machinepack-http machinepack-ifthen@treelinehq/machinepack-ifthen machinepack-json@treelinehq/machinepack-json machinepack-mailgun@particlebanana/machinepack-mailgun machinepack-math@treelinehq/machinepack-math machinepack-numbers@treelinehq/machinepack-numbers machinepack-passwords@mikermcneil/machinepack-passwords machinepack-paths@treelinehq/machinepack-paths machinepack-process@treelinehq/machinepack-process machinepack-strings@treelinehq/machinepack-strings machinepack-urls@mikermcneil/machinepack-urls machinepack-util@treelinehq/machinepack-util --save --save-exact"
   },
   "keywords": [
-    "sails",
     "stdlib",
-    "waterline",
-    "node-machine",
-    "machinepack",
-    "machine",
-    "machinepacks",
-    "machines"
+    "node-machine"
   ],
   "author": "The Treeline Company",
   "license": "",
@@ -37,16 +31,12 @@
     "machinepack-passwords": "git://github.com/mikermcneil/machinepack-passwords.git#ef4fad5c9e0e881218d58b8582608a6b5cc19918",
     "machinepack-paths": "git://github.com/treelinehq/machinepack-paths.git#a582f82355395df58762a7b7c298296c2df8d9d8",
     "machinepack-process": "git://github.com/treelinehq/machinepack-process.git#8046adc6b338050e781982f1d74f560eaf8e1172",
-    "machinepack-reqres": "git://github.com/treelinehq/machinepack-reqres.git#37ffb474ceed8fa3e746b27ad244d4fb866f0a18",
-    "machinepack-sessionauth": "git://github.com/treelinehq/machinepack-sessionauth.git#e108c4076dca955e0eadde9330723fa874b21b7e",
-    "machinepack-sockets": "git://github.com/sgress454/machinepack-sockets.git#83e0ff04950b3e7e852fbd329d59191c52495914",
     "machinepack-strings": "git://github.com/treelinehq/machinepack-strings.git#cbd4a43bfaf2e2cb9bbb53397975c106b003e245",
     "machinepack-urls": "git://github.com/mikermcneil/machinepack-urls.git#8c69dfb4dd89e7ce99a59d99da86703deb569a24",
-    "machinepack-util": "git://github.com/treelinehq/machinepack-util.git#34fc5f5a4fe54dd75954b4d0c531ef855c9db89e",
-    "machinepack-waterline": "git://github.com/treelinehq/machinepack-waterline.git#e834111be05aeec8680420e67723d0fd052d09f6"
+    "machinepack-util": "git://github.com/treelinehq/machinepack-util.git#34fc5f5a4fe54dd75954b4d0c531ef855c9db89e"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:sailsjs/stdlib.git"
+    "url": "https://github.com/sailsjs/stdlib/tree/generic-only"
   }
 }
