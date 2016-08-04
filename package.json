@@ -40,7 +40,7 @@
     "machinepack-reqres": "git://github.com/treelinehq/machinepack-reqres.git#37ffb474ceed8fa3e746b27ad244d4fb866f0a18",
     "machinepack-sessionauth": "git://github.com/treelinehq/machinepack-sessionauth.git#e108c4076dca955e0eadde9330723fa874b21b7e",
     "machinepack-sockets": "git://github.com/sgress454/machinepack-sockets.git#83e0ff04950b3e7e852fbd329d59191c52495914",
-    "machinepack-strings": "4.3.0",
+    "machinepack-strings": "git://github.com/treelinehq/machinepack-strings.git#cbd4a43bfaf2e2cb9bbb53397975c106b003e245",
     "machinepack-urls": "git://github.com/mikermcneil/machinepack-urls.git#8c69dfb4dd89e7ce99a59d99da86703deb569a24",
     "machinepack-util": "git://github.com/treelinehq/machinepack-util.git#34fc5f5a4fe54dd75954b4d0c531ef855c9db89e",
     "machinepack-waterline": "git://github.com/treelinehq/machinepack-waterline.git#e834111be05aeec8680420e67723d0fd052d09f6"
