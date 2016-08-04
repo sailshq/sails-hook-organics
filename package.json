@@ -3,7 +3,8 @@
   "version": "0.3.2",
   "description": "Standard library for Node/Sails applications. Hand-picked and maintained by the Sails.js core team.",
   "scripts": {
-    "test": "echo 'See the section on 'How do I run the tests?' in README.md.'"
+    "test": "echo 'See the section on 'How do I run the tests?' in README.md.'",
+    "upgrade-all": "npm install machinepack-arrays machinepack-booleans machinepack-console machinepack-datetime machinepack-dictionaries machinepack-emailaddresses machinepack-fs machinepack-gravatar machinepack-http machinepack-ifthen machinepack-json machinepack-mailgun machinepack-math machinepack-numbers machinepack-passwords machinepack-paths machinepack-process machinepack-reqres machinepack-sessionauth machinepack-sockets machinepack-strings machinepack-urls machinepack-util machinepack-waterline --save --save-exact"
   },
   "keywords": [
     "sails",
