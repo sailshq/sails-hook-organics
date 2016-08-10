@@ -1,6 +1,6 @@
 {
   "name": "sails-stdlib",
-  "version": "0.3.6",
+  "version": "0.3.7",
   "description": "Standard library for Node/Sails applications. Hand-picked and maintained by the Sails.js core team.",
   "scripts": {
     "test": "echo 'See the section on 'How do I run the tests?' in README.md.'",
