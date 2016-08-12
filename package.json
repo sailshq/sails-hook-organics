@@ -27,7 +27,7 @@
     "machinepack-dictionaries": "git://github.com/treelinehq/machinepack-dictionaries.git#be64599eb97c3329128010ddd815a4d7e8995e54",
     "machinepack-emailaddresses": "git://github.com/mikermcneil/machinepack-emailaddresses.git#afc3c9955dc26d785eaec73591b6fefad1175971",
     "machinepack-fs": "git://github.com/mikermcneil/machinepack-fs.git#41522a8446fdbac34f89157ec6e8d646551c2555",
-    "machinepack-gravatar": "git://github.com/irlnathan/machinepack-gravatar.git#7b2b2afd24481ca3fb40c8aac18002cad9837aac",
+    "machinepack-gravatar": "git://github.com/irlnathan/machinepack-gravatar.git#b29071b150e3ed8df062d0553ce3e64084c6596f",
     "machinepack-http": "git://github.com/mikermcneil/machinepack-http.git#d445c00a35ba5e652c86cb923551cd1996ffe159",
     "machinepack-ifthen": "git://github.com/treelinehq/machinepack-ifthen.git#18b1ead1fcee421a792ba73544c750005ad3ffad",
     "machinepack-json": "git://github.com/treelinehq/machinepack-json.git#07e5e6826b1af44ed012379c5b17250e09a398dc",
@@ -42,7 +42,7 @@
     "machinepack-sockets": "git://github.com/sgress454/machinepack-sockets.git#3352e26e7a10283563db1aa8fdb59ba6478a1a42",
     "machinepack-strings": "git://github.com/treelinehq/machinepack-strings.git#c4ad6fbf32ad579acefcdab1cabf72622068d6f1",
     "machinepack-urls": "git://github.com/mikermcneil/machinepack-urls.git#4cc9393c7e46b51e57066d31b3e1edc12fec372a",
-    "machinepack-util": "git://github.com/treelinehq/machinepack-util.git#4fc3f5065491c1544fdbebb918262ec74678f2dc",
+    "machinepack-util": "git://github.com/treelinehq/machinepack-util.git#2baecb44450134fa07c7317c4557910d7d5f8e53",
     "machinepack-waterline": "git://github.com/treelinehq/machinepack-waterline.git#5aef25bdc7aa1e81eea6f3b2f5974d91323988a6"
   },
   "repository": {
