@@ -91,6 +91,9 @@ module.exports = function loadStdlibPkg (slug){
     case 'waterline':
       return require('machinepack-waterline');
 
+    case 'sails':
+      return require('machinepack-sails');
+
     case 'sockets':
       return require('machinepack-sockets');
 
