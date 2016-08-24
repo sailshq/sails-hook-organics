@@ -43,4 +43,6 @@ The following machinepacks **are not included** in `stdlib`:
 See [`sails-stdlib#FAQ`](https://www.npmjs.com/package/sails-stdlib#FAQ).
 
 
+## License
 
+MIT
