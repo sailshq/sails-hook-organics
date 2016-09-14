@@ -34,7 +34,7 @@
     "machinepack-process": "git://github.com/treelinehq/machinepack-process.git#d091c58ce265ad31624c92bafd1b7d02ae49d129",
     "machinepack-strings": "git://github.com/treelinehq/machinepack-strings.git#e4a588c4428785c395ebe111515f1069e8c23c7d",
     "machinepack-urls": "git://github.com/mikermcneil/machinepack-urls.git#2abb34f4e700e124fc3a85d95c211ede4f7878d4",
-    "machinepack-util": "git://github.com/treelinehq/machinepack-util.git#c4723c09f88f1034afe98789538c65fcc4472f17",
+    "machinepack-util": "git://github.com/treelinehq/machinepack-util.git#c4723c09f88f1034afe98789538c65fcc4472f17"
   },
   "repository": {
     "type": "git",

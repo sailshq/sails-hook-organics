@@ -114,6 +114,9 @@ module.exports.VERSION = PACKAGE_JSON.version;
 module.exports.PACKS = (function (){
   var _packs = {};
   Object.keys(PACKAGE_JSON.dependencies).forEach(function (pkgName){
+    // Skip the machine runner (it's not a pack, it's just here for easier debugging.)
+    if (pkgName === 'machine') { return; }
+
     var shorthandSlug = pkgName.replace(/^machinepack-/, '');
     _packs[shorthandSlug] = PACKAGE_JSON.dependencies[pkgName];
   });
