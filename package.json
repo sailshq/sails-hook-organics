@@ -21,7 +21,7 @@
   "license": "",
   "dependencies": {
     "machine": "^13.0.0-11",
-    "machinepack-arrays": "git://github.com/treelinehq/machinepack-arrays.git#10f5ffdb51e880e8e42cbdecf7ba9bd95ea5342e",
+    "machinepack-arrays": "git://github.com/treelinehq/machinepack-arrays.git#344ea283f365a2b87ee56d19677cec864cf7a8a1",
     "machinepack-booleans": "git://github.com/treelinehq/machinepack-booleans.git#2e13754fa11293aed3a7f9fd5b46f94e66c9ba2f",
     "machinepack-console": "git://github.com/treelinehq/machinepack-console.git#37375a393176663029d37a1e457d6fa2ba5a6f59",
     "machinepack-datetime": "git://github.com/sgress454/machinepack-datetime.git#873e23c2f9750d7d569ecea5c091d87d20cf9e42",
