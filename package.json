@@ -27,7 +27,7 @@
     "machinepack-datetime": "git://github.com/sgress454/machinepack-datetime.git#873e23c2f9750d7d569ecea5c091d87d20cf9e42",
     "machinepack-dictionaries": "git://github.com/treelinehq/machinepack-dictionaries.git#bfef6436cccd4d7eff6cf4cf1d04edd1fbba1070",
     "machinepack-emailaddresses": "git://github.com/mikermcneil/machinepack-emailaddresses.git#f88649f4acfe428d31641e2abff718d9c86beeaf",
-    "machinepack-fs": "git://github.com/mikermcneil/machinepack-fs.git#21ea7479b27749b9b9bd8e9e2fd5bd1712ecc716",
+    "machinepack-fs": "git://github.com/mikermcneil/machinepack-fs.git#2a68adb3837c84b3ed80fe87463df2a13649fa95",
     "machinepack-gravatar": "git://github.com/irlnathan/machinepack-gravatar.git#de3e6607c59f354871af3b514808fa290838fb55",
     "machinepack-http": "git://github.com/mikermcneil/machinepack-http.git#8480eeb8faa8c846f2dfb4907f5962cbf8599fd9",
     "machinepack-ifthen": "git://github.com/treelinehq/machinepack-ifthen.git#2faacb7c60a1d3f3118df7e585c1e228bc5a5940",
@@ -43,9 +43,9 @@
     "machinepack-sessionauth": "git://github.com/treelinehq/machinepack-sessionauth.git#e6b4752e1a6d401840ea51817f54db561548e52f",
     "machinepack-sockets": "git://github.com/sgress454/machinepack-sockets.git#fb11a52098943251189e2f0dcbb452341e9f033f",
     "machinepack-strings": "git://github.com/treelinehq/machinepack-strings.git#e4a588c4428785c395ebe111515f1069e8c23c7d",
-    "machinepack-urls": "git://github.com/mikermcneil/machinepack-urls.git#2abb34f4e700e124fc3a85d95c211ede4f7878d4",
+    "machinepack-urls": "git://github.com/mikermcneil/machinepack-urls.git#49388b3bdba5c9a780834c2c5d29d388a1cf4d90",
     "machinepack-util": "git://github.com/treelinehq/machinepack-util.git#c4723c09f88f1034afe98789538c65fcc4472f17",
-    "machinepack-waterline": "git://github.com/treelinehq/machinepack-waterline.git#ad9578ca475bfd45deb71170775dc058d422133c"
+    "machinepack-waterline": "git://github.com/treelinehq/machinepack-waterline.git#773de90f5e9ce392bcfead0dba5fea30795ab797"
   },
   "repository": {
     "type": "git",
