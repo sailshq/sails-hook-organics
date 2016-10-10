@@ -45,7 +45,7 @@
     "machinepack-strings": "git://github.com/treelinehq/machinepack-strings.git#e4a588c4428785c395ebe111515f1069e8c23c7d",
     "machinepack-urls": "git://github.com/mikermcneil/machinepack-urls.git#49388b3bdba5c9a780834c2c5d29d388a1cf4d90",
     "machinepack-util": "git://github.com/treelinehq/machinepack-util.git#c4723c09f88f1034afe98789538c65fcc4472f17",
-    "machinepack-waterline": "git://github.com/treelinehq/machinepack-waterline.git#cc374786ef5b28ace532d2732853801223dad562"
+    "machinepack-waterline": "git://github.com/treelinehq/machinepack-waterline.git#eddaafcb82c771b90ea2bccdfc9d54b4521c0d01"
   },
   "repository": {
     "type": "git",
