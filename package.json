@@ -21,7 +21,7 @@
   "license": "",
   "dependencies": {
     "machine": "^13.0.0-11",
-    "machinepack-arrays": "git://github.com/treelinehq/machinepack-arrays.git#79c2d7f3e60e44f33fe29fb713a3a5dcb73f9b7e",
+    "machinepack-arrays": "git://github.com/treelinehq/machinepack-arrays.git#7fe90acaf248e7316727bc73eadfd5ed9783bc46",
     "machinepack-booleans": "git://github.com/treelinehq/machinepack-booleans.git#2e13754fa11293aed3a7f9fd5b46f94e66c9ba2f",
     "machinepack-console": "git://github.com/treelinehq/machinepack-console.git#ec09bcffcb89a446b3d3043b897094c266effeff",
     "machinepack-datetime": "git://github.com/sgress454/machinepack-datetime.git#cfd0cd473053655fdca8c7f3a3f5cac185c48f5f",
@@ -44,7 +44,7 @@
     "machinepack-sockets": "git://github.com/sgress454/machinepack-sockets.git#fb11a52098943251189e2f0dcbb452341e9f033f",
     "machinepack-strings": "git://github.com/treelinehq/machinepack-strings.git#e4a588c4428785c395ebe111515f1069e8c23c7d",
     "machinepack-urls": "git://github.com/mikermcneil/machinepack-urls.git#49388b3bdba5c9a780834c2c5d29d388a1cf4d90",
-    "machinepack-util": "git://github.com/treelinehq/machinepack-util.git#c4723c09f88f1034afe98789538c65fcc4472f17",
+    "machinepack-util": "git://github.com/treelinehq/machinepack-util.git#39939223130279a0214e41e515a4326a90ff914b",
     "machinepack-waterline": "git://github.com/treelinehq/machinepack-waterline.git#52f9cd244c958b933d3bdb969022af07661241c1"
   },
   "repository": {
