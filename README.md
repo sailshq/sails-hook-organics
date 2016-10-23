@@ -90,7 +90,7 @@ var Mailgun = stdlib('mailgun');
 
 // Get a gravatar for an email address.
 // (http://node-machine.org/machinepack-gravatar/get-image-url)
-var imageGravatar.getImageUrl({
+var imageUrl = Gravatar.getImageUrl({
   emailAddress: 'amy@gonzales-enterprises.com',
   gravatarSize: 400
 }).execSync();
@@ -101,11 +101,11 @@ var imageGravatar.getImageUrl({
 Mailgun.sendHtmlEmail({
   apiKey: 'key-3432afa32e9401482aba183c13f3',
   domain: 'sandbox5f89931913a9ab31130131350101.mailgun.og',
-  toName: 'Amy Gonzales',
-  subject: 'Welcome, Amy!',
-  htmlMessage: 'Amy,\nThanks for joining our community. If you have any questions, please don\'t hesitate to send them our way. Feel free to reply to this email directly.\n\nSincerely,\nThe Management',
   fromEmail: 'harold@example.enterprise',
   fromName: 'Harold Greaseworthy',
+  toName: 'Amy Gonzales',
+  subject: 'Welcome, Amy!',
+  htmlMessage: 'Amy,\nThanks for joining our community. If you have any questions, please don\'t hesitate to send them our way. Feel free to reply to this email directly.\n\nSincerely,\nThe Management'
 }).exec(function (err) {
   if (err) {
     console.error('Failed to send email. Details:',err);
