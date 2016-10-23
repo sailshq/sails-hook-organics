@@ -16,9 +16,35 @@ npm install sails-stdlib --save
 
 ```js
 var stdlib = require('sails-stdlib');
+
 var Gravatar = stdlib('gravatar'); // << just like doing `require('machinepack-gravatar');`
 var Mailgun = stdlib('mailgun'); // << just like doing `require('machinepack-mailgun');`
 ```
+
+
+## Bugs &nbsp; [![NPM version](https://badge.fury.io/js/sails-stdlib.svg)](http://npmjs.com/package/sails-stdlib)
+
+To report a bug, [click here](http://sailsjs.com/bugs).  Someone will look into it ASAP.
+
+In the mean time, if you see how to fix the problem and have a moment to prepare a patch, feel free to submit a pull request to the appropriate repo.  Thanks for taking the time to help out!
+
+> Please be aware that we can't merge any unsolicited PRs that contain changes to usage, including additional methods or options.
+> With this project, we're trying really hard to keep things consistent between individual methods, and that means being
+> vigilant about the effect of any usage change in the grand scheme of the library.
+
+
+## Contributing
+
+Please observe the guidelines and conventions laid out in the [Sails project contribution guide](http://sailsjs.com/contribute) when opening issues or submitting pull requests.
+
+[![NPM](https://nodei.co/npm/sails-stdlib.png?downloads=true)](http://npmjs.com/package/sails-stdlib)
+
+
+
+## Help
+
+First, please check out the [relevant documentation](#documentation).  If you have further questions or are having trouble, click [here](http://sailsjs.com/support).
+
 
 ### Documentation
 
@@ -90,29 +116,6 @@ Mailgun.sendHtmlEmail({
 
 });
 ```
-
-
-## Help
-
-First, please check out the [relevant documentation](#documentation).  If you have further questions or are having trouble, click [here](http://sailsjs.com/support).
-
-
-## Bugs &nbsp; [![NPM version](https://badge.fury.io/js/sails-stdlib.svg)](http://npmjs.com/package/sails-stdlib)
-
-To report a bug, [click here](http://sailsjs.com/bugs).  Someone will look into it ASAP.
-
-In the mean time, if you see how to fix the problem and have a moment to prepare a patch, feel free to submit a pull request to the appropriate repo.  Thanks for taking the time to help out!
-
-> Please be aware that we can't merge any unsolicited PRs that contain changes to usage, including additional methods or options.
-> With this project, we're trying really hard to keep things consistent between individual methods, and that means being
-> vigilant about the effect of any usage change in the grand scheme of the library.
-
-
-## Contributing
-
-Please observe the guidelines and conventions laid out in the [Sails project contribution guide](http://sailsjs.com/contribute) when opening issues or submitting pull requests.
-
-[![NPM](https://nodei.co/npm/sails-stdlib.png?downloads=true)](http://npmjs.com/package/sails-stdlib)
 
 
 
@@ -196,7 +199,7 @@ improvements we're interested in making are related to performance.
 #### I'd like to help work on this.
 
 Awesome!  Tweet [@sailsjs](https://twitter.com/sailsjs) and let us know the minimum # of hours per week you'll
-be able to commit, and someone from the core team will contact you ASAP. 
+be able to commit, and someone from the core team will contact you ASAP.
 
 
 ## License
