@@ -1,5 +1,9 @@
 # sails-stdlib
 
+> ### WARNING
+> 
+> The Sails standard library is experimental and may undergo rapid changes until the release of Sails v1.0 later this year (2016).
+
 Standard library for Node/Sails applications.
 
 This package contains a set of hand-picked, trusted modules recommended by the Sails core team.
