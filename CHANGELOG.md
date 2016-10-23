@@ -1,7 +1,7 @@
 # sails-stdlib Changelog
 
-## <sub>v0.9.0</sub>
-#### _Oct 1, 2016_ — [Diff](https://github.com/lodash/lodash/compare/v0.3.1...v0.9.0) — [Docs](https://github.com/sailsjs/stdlib/tree/v0.9.0/README.md)
+## <sub>v1.0.0</sub>
+#### _Dec 1, 2016_ — [Diff](https://github.com/treelinehq/stdlib/compare/v0.3.1...v1.0.0) — [Docs](https://github.com/treelinehq/stdlib/tree/v1.0.0/README.md)
 
  * Initial release
 

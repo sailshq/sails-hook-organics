@@ -18,7 +18,7 @@
     "machines"
   ],
   "author": "The Treeline Company",
-  "license": "",
+  "license": "MIT",
   "dependencies": {
     "machine": "^13.0.0-11",
     "machinepack-arrays": "git://github.com/treelinehq/machinepack-arrays.git#7fe90acaf248e7316727bc73eadfd5ed9783bc46",
