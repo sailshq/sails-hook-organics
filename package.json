@@ -21,11 +21,11 @@
   "license": "MIT",
   "dependencies": {
     "machine": "^13.0.0-11",
-    "machinepack-arrays": "git://github.com/treelinehq/machinepack-arrays.git#b0359f31e24a306a8a05207f7ad8dfbc42b8f995",
+    "machinepack-arrays": "git://github.com/treelinehq/machinepack-arrays.git#fcb0f382ef9b5c546bf1c204bae13dc3bf2b4985",
     "machinepack-booleans": "git://github.com/treelinehq/machinepack-booleans.git#ae639e06ca108fb930650ffa5b6546f3b8e596de",
     "machinepack-console": "git://github.com/treelinehq/machinepack-console.git#ec09bcffcb89a446b3d3043b897094c266effeff",
     "machinepack-datetime": "git://github.com/sgress454/machinepack-datetime.git#618a3d78303cc476175d8e0f87bba8258cfea1d5",
-    "machinepack-dictionaries": "git://github.com/treelinehq/machinepack-dictionaries.git#bfef6436cccd4d7eff6cf4cf1d04edd1fbba1070",
+    "machinepack-dictionaries": "git://github.com/treelinehq/machinepack-dictionaries.git#060809c406ace7d276027bc17a9abb6371c7aaa1",
     "machinepack-emailaddresses": "git://github.com/mikermcneil/machinepack-emailaddresses.git#f88649f4acfe428d31641e2abff718d9c86beeaf",
     "machinepack-fs": "git://github.com/mikermcneil/machinepack-fs.git#2a68adb3837c84b3ed80fe87463df2a13649fa95",
     "machinepack-gravatar": "git://github.com/irlnathan/machinepack-gravatar.git#de3e6607c59f354871af3b514808fa290838fb55",
@@ -44,7 +44,7 @@
     "machinepack-sockets": "git://github.com/sgress454/machinepack-sockets.git#fb11a52098943251189e2f0dcbb452341e9f033f",
     "machinepack-strings": "git://github.com/treelinehq/machinepack-strings.git#6f429144064c573da4d92226b22d4a7a14d22e94",
     "machinepack-urls": "git://github.com/mikermcneil/machinepack-urls.git#49388b3bdba5c9a780834c2c5d29d388a1cf4d90",
-    "machinepack-util": "git://github.com/treelinehq/machinepack-util.git#39939223130279a0214e41e515a4326a90ff914b",
+    "machinepack-util": "git://github.com/treelinehq/machinepack-util.git#0a24a99c88f19296db985c26eb5a2179bb3dabc3",
     "machinepack-waterline": "git://github.com/treelinehq/machinepack-waterline.git#a1062c552c55e1ddb3e314d7fadd5e8f4d8f3863"
   },
   "repository": {
