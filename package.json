@@ -29,7 +29,7 @@
     "machinepack-emailaddresses": "git://github.com/mikermcneil/machinepack-emailaddresses.git#f88649f4acfe428d31641e2abff718d9c86beeaf",
     "machinepack-fs": "git://github.com/mikermcneil/machinepack-fs.git#2a68adb3837c84b3ed80fe87463df2a13649fa95",
     "machinepack-gravatar": "git://github.com/irlnathan/machinepack-gravatar.git#de3e6607c59f354871af3b514808fa290838fb55",
-    "machinepack-http": "git://github.com/mikermcneil/machinepack-http.git#8480eeb8faa8c846f2dfb4907f5962cbf8599fd9",
+    "machinepack-http": "3.0.0",
     "machinepack-ifthen": "git://github.com/treelinehq/machinepack-ifthen.git#2faacb7c60a1d3f3118df7e585c1e228bc5a5940",
     "machinepack-json": "git://github.com/treelinehq/machinepack-json.git#cb9b172d24d8a5f6a12f3ad63d95d6985fb2bd70",
     "machinepack-mailgun": "git://github.com/particlebanana/machinepack-mailgun.git#d473ed00e7195297226740b01a87b01e4149a545",
