@@ -32,13 +32,15 @@ To report a bug, [click here](http://sailsjs.com/bugs).  Someone will look into 
 
 In the mean time, if you see how to fix the problem and have a moment to prepare a patch, feel free to submit a pull request to the appropriate repo.  Thanks for taking the time to help out!
 
-> With this project, we're trying really hard to keep things consistent between individual methods,
-> and that means being vigilant about the effect of any usage change in the grand scheme of the library.
->
 > We always welcome any patch with a bug fix, typo correction, performance enhancement, better error message,
-> or that improves the readability of inline documentation/metadata/comments.But before submitting modifications 
-> to code, please be aware:  We can't merge any unsolicited PRs that contain _additive or breaking_ changes to
-> usage, including additional methods or options, without going through our process. Please [send a proposal PR to the main Sails repo](http://contribute) first.
+> or that improves the readability of inline documentation/metadata/comments.
+>
+> But before submitting modifications to code, please be aware:
+> With this project, we've tried really hard to keep things consistent between individual methods,
+> and that means being vigilant about the effect of any usage change in the grand scheme of the library.
+> Thus we can't merge any unsolicited PRs that contain _additive or breaking_ changes to usage (including
+> new methods or options), without going through the process of submitting a proposal PR to the main Sails
+> repo first.  See [**Contributing**](#contributing) below for more information.
 
 
 ## Contributing
@@ -206,8 +208,7 @@ improvements we're interested in making are related to performance.
 
 #### I'd like to help work on this.
 
-Awesome!  Please [introduce yourself](https://sailsjs.com/contact) and let us know a rough guess at the # of hours/week you'll
-be able to commit.  Someone from the core team will contact you ASAP.
+Awesome!  Please have a read through the [contribution guide](http://sailsjs.com/contribute), if you haven't already.  If you're actively interested in helping to shape the future usage and roadmap for this library, we welcome youre input!  Please [introduce yourself](https://sailsjs.com/contact), let us know a rough guess at the # of hours per week you'll be able to commit, and someone from the core team will contact you ASAP.
 
 
 ## License
