@@ -2,7 +2,7 @@
 
 > ### WARNING
 > 
-> The Sails standard library is experimental and may undergo rapid changes until the release of Sails v1.0 later this year (2016).
+> The Sails standard library is still experimental as of December 2016.
 
 Standard library for Node/Sails applications.
 
@@ -32,9 +32,13 @@ To report a bug, [click here](http://sailsjs.com/bugs).  Someone will look into 
 
 In the mean time, if you see how to fix the problem and have a moment to prepare a patch, feel free to submit a pull request to the appropriate repo.  Thanks for taking the time to help out!
 
-> Please be aware that we can't merge any unsolicited PRs that contain changes to usage, including additional methods or options.
-> With this project, we're trying really hard to keep things consistent between individual methods, and that means being
-> vigilant about the effect of any usage change in the grand scheme of the library.
+> With this project, we're trying really hard to keep things consistent between individual methods,
+> and that means being vigilant about the effect of any usage change in the grand scheme of the library.
+>
+> We always welcome any patch with a bug fix, typo correction, performance enhancement, better error message,
+> or that improves the readability of inline documentation/metadata/comments.But before submitting modifications 
+> to code, please be aware:  We can't merge any unsolicited PRs that contain _additive or breaking_ changes to
+> usage, including additional methods or options, without going through our process. Please [send a proposal PR to the main Sails repo](http://contribute) first.
 
 
 ## Contributing
@@ -47,7 +51,7 @@ Please observe the guidelines and conventions laid out in the [Sails project con
 
 ## Help
 
-First, please check out the [relevant documentation](#documentation).  If you have further questions or are having trouble, click [here](http://sailsjs.com/support).
+First, please check out the [relevant documentation](#documentation).  If you are having trouble or have questions, click [here](http://sailsjs.com/support)!
 
 
 ### Documentation
@@ -202,8 +206,8 @@ improvements we're interested in making are related to performance.
 
 #### I'd like to help work on this.
 
-Awesome!  Tweet [@sailsjs](https://twitter.com/sailsjs) and let us know the minimum # of hours per week you'll
-be able to commit, and someone from the core team will contact you ASAP.
+Awesome!  Please [introduce yourself](https://sailsjs.com/contact) and let us know a rough guess at the # of hours/week you'll
+be able to commit.  Someone from the core team will contact you ASAP.
 
 
 ## License
