@@ -45,7 +45,7 @@ In the mean time, if you see how to fix the problem and have a moment to prepare
 
 ## Contributing
 
-Please observe the guidelines and conventions laid out in the [Sails project contribution guide](http://sailsjs.com/contribute) when opening issues or submitting pull requests.
+Please observe the guidelines and conventions laid out in the [Sails project contribution guide](http://sailsjs.com/documentation/contributing) when opening issues or submitting pull requests.
 
 [![NPM](https://nodei.co/npm/sails-stdlib.png?downloads=true)](http://npmjs.com/package/sails-stdlib)
 
