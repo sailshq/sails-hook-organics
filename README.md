@@ -1,8 +1,8 @@
 # sails-stdlib
 
 > ### WARNING
-> 
-> The Sails standard library is still experimental as of December 2016.
+>
+> The Sails standard library is still experimental as of Feb 2017.
 
 Standard library for Node/Sails applications.
 

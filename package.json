@@ -17,7 +17,7 @@
     "machinepacks",
     "machines"
   ],
-  "author": "The Treeline Company",
+  "author": "The Sails Company",
   "license": "MIT",
   "dependencies": {
     "machine": "^13.0.0-11",
