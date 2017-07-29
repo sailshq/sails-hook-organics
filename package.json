@@ -37,7 +37,7 @@
     "machinepack-passwords": "^3.0.0-0",
     "machinepack-paths": "git://github.com/treelinehq/machinepack-paths.git#2d25ec774bbca6e3de00ff4f3b975e6f421f6da4",
     "machinepack-process": "git://github.com/treelinehq/machinepack-process.git#4c9fe46cb0f666e88bd5f0e31ffaf5eaaff1639f",
-    "machinepack-reqres": "git://github.com/treelinehq/machinepack-reqres.git#dc85f97285e55b52f5ee56ef6fa9d9e3ed03a217",
+    "machinepack-reqres": "^0.3.1",
     "machinepack-sails": "git://github.com/treelinehq/machinepack-sails.git#365d7241498cc5d63abbd3464ebb1c5c116a4ad3",
     "machinepack-sessionauth": "git://github.com/treelinehq/machinepack-sessionauth.git#e6b4752e1a6d401840ea51817f54db561548e52f",
     "machinepack-sockets": "2.0.1",
