@@ -27,7 +27,7 @@
     "machinepack-datetime": "git://github.com/sgress454/machinepack-datetime.git#7e4cb42fdd17f8e4eb7186579f6116282cc484cd",
     "machinepack-dictionaries": "git://github.com/treelinehq/machinepack-dictionaries.git#060809c406ace7d276027bc17a9abb6371c7aaa1",
     "machinepack-emailaddresses": "git://github.com/mikermcneil/machinepack-emailaddresses.git#f88649f4acfe428d31641e2abff718d9c86beeaf",
-    "machinepack-fs": "git://github.com/mikermcneil/machinepack-fs.git#2a68adb3837c84b3ed80fe87463df2a13649fa95",
+    "machinepack-fs": "^10.0.0-0",
     "machinepack-gravatar": "git://github.com/irlnathan/machinepack-gravatar.git#de3e6607c59f354871af3b514808fa290838fb55",
     "machinepack-http": "4.0.0-1",
     "machinepack-ifthen": "git://github.com/treelinehq/machinepack-ifthen.git#2faacb7c60a1d3f3118df7e585c1e228bc5a5940",
