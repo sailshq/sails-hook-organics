@@ -116,7 +116,7 @@ module.exports = function loadStdlibPkg (slug){
     // for...
     // Miscreants
     default:
-      throw new Error('Unrecognized package slug: `'+slug+'`.  Please choose from the list of packages at https://github.com/sailsjs/stdlib');
+      throw new Error('Unrecognized package slug: `'+slug+'`.  Please choose from the list of packages at https://npmjs.com/package/sails-stdlib');
   }
 
 };
