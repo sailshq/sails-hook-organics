@@ -2,11 +2,19 @@
  * Module dependencies
  */
 
+var xstrings = require('machinepack-strings');
+var xfs = require('machinepack-fs');
+var xhttp = require('machinepack-http');
+var xprocess = require('machinepack-process');
+var xgravatar = require('machinepack-gravatar');
+var xpasswords = require('machinepack-passwords');
+var xmailgun = require('machinepack-mailgun');
+var xstripe = require('machinepack-stripe');
 var PACKAGE_JSON = require('./package.json');
 
 
 /**
- * stdlib()
+ * sails-stdlib()
  *
  * Load a package from the standard library.
  *
@@ -18,56 +26,74 @@ var PACKAGE_JSON = require('./package.json');
  *        in is casted to lowercase before being used to look up the appropriate
  *        package.
  *
+ * @param {Dictionary?} customUsageOpts
+ *        Custom usage opts to pass in
+ *
  * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
  * @return {Dictionary}
  *         The machinepack instance for the specified package.
  */
-module.exports = function loadStdlibPkg (slug){
+module.exports = function loadSailsStdlibPg (slug, customUsageOpts){
 
-  switch (slug.toLowerCase()) {
+  var pg = (function _gettingAppropriatePackage(){
+    switch (slug.toLowerCase()) {
 
-
-    // for...
-    // Any Occasion
-    case 'strings':
-      return require('machinepack-strings');
-    case 'flow':
-      throw new Error('(work in progress)');
-
-
-    // for...
-    // Scripts and NPM Packages
-    case 'fs':
-      return require('machinepack-fs');
-
-    case 'http':
-      return require('machinepack-http');
-
-    case 'process':
-      return require('machinepack-process');
+      // for...
+      // Any Occasion
+      case 'strings':
+        return xstrings;
+      case 'flow':
+        throw new Error('(work in progress)');
 
 
-    // for...
-    // App Servers & Web APIs
-    case 'gravatar':
-      return require('machinepack-gravatar');
+      // for...
+      // Scripts and NPM Packages
+      case 'fs':
+        return xfs;
 
-    case 'passwords':
-      return require('machinepack-passwords');
+      case 'http':
+        return xhttp;
 
-    case 'mailgun':
-      return require('machinepack-mailgun');
-
-    case 'stripe':
-      return require('machinepack-stripe');
+      case 'process':
+        return xprocess;
 
 
-    // for...
-    // Miscreants
-    default:
-      throw new Error('Unrecognized package slug: `'+slug+'`.  Please choose from the list of packages listed at https://npmjs.com/package/sails-stdlib');
+      // for...
+      // App Servers & Web APIs
+      case 'gravatar':
+        return xgravatar;
+
+      case 'passwords':
+        return xpasswords;
+
+      case 'mailgun':
+        return xmailgun;
+
+      case 'stripe':
+        return xstripe;
+
+
+      // for...
+      // Miscreants
+      default:
+        throw new Error('Unrecognized package slug: `'+slug+'`.  Please choose from the list of packages listed at https://npmjs.com/package/sails-stdlib');
+    }
+  })();//†
+
+  // If specified, customize with custom usage opts.
+  if (customUsageOpts) {
+    pg = pg.customize(customUsageOpts);
   }
 
+  return pg;
+
+};
+
+// Expose a top-level "customize" function, for convenience.
+module.exports.customize = function(baseCustomUsageOpts){
+  return function loadCustomSailsStdlibPg(slug, customUsageOpts){
+    return module.exports(slug, Object.assign({}, baseCustomUsageOpts, customUsageOpts||{}));
+  };//ƒ
 };
 
 // Expose the version string for debugging purposes.
