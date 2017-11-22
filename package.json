@@ -19,6 +19,7 @@
   "author": "The Sails Company",
   "license": "MIT",
   "dependencies": {
+    "machine": "^15.0.0-13",
     "machinepack-fs": "^10.0.0-0",
     "machinepack-gravatar": "^2.0.0",
     "machinepack-http": "^4.0.0-1",
