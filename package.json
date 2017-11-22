@@ -3,10 +3,7 @@
   "version": "0.8.0-6",
   "description": "Standard library for Node/Sails applications. Hand-picked and maintained by the Sails.js core team.",
   "scripts": {
-    "test": "echo 'See the section on 'How do I run the tests?' in README.md.'",
-    "upgrade": "npm install machinepack-arrays@latest machinepack-booleans@latest machinepack-console@latest machinepack-datetime@latest machinepack-dictionaries@latest machinepack-emailaddresses@latest machinepack-fs@latest machinepack-gravatar@latest machinepack-http@latest machinepack-ifthen@latest machinepack-json@latest machinepack-mailgun@latest machinepack-math@latest machinepack-numbers@latest machinepack-passwords@latest machinepack-paths@latest machinepack-process@latest machinepack-reqres@latest machinepack-sessionauth@latest machinepack-sockets@latest machinepack-strings@latest machinepack-urls@latest machinepack-util@latest machinepack-waterline@latest machinepack-sails@latest --save --save-exact",
-    "upgrade-beta": "npm install machinepack-arrays@beta machinepack-booleans@beta machinepack-console@beta machinepack-datetime@beta machinepack-dictionaries@beta machinepack-emailaddresses@beta machinepack-fs@beta machinepack-gravatar@beta machinepack-http@beta machinepack-ifthen@beta machinepack-json@beta machinepack-mailgun@beta machinepack-math@beta machinepack-numbers@beta machinepack-passwords@beta machinepack-paths@beta machinepack-process@beta machinepack-reqres@beta machinepack-sessionauth@beta machinepack-sockets@beta machinepack-strings@beta machinepack-urls@beta machinepack-util@beta machinepack-waterline@beta machinepack-sails@beta --save --save-exact",
-    "upgrade-dev": "npm install machinepack-arrays@treelinehq/machinepack-arrays machinepack-booleans@treelinehq/machinepack-booleans machinepack-console@treelinehq/machinepack-console machinepack-datetime@sgress454/machinepack-datetime machinepack-dictionaries@treelinehq/machinepack-dictionaries machinepack-emailaddresses@mikermcneil/machinepack-emailaddresses machinepack-fs@mikermcneil/machinepack-fs machinepack-gravatar@irlnathan/machinepack-gravatar machinepack-http@mikermcneil/machinepack-http machinepack-ifthen@treelinehq/machinepack-ifthen machinepack-json@treelinehq/machinepack-json machinepack-mailgun@particlebanana/machinepack-mailgun machinepack-math@treelinehq/machinepack-math machinepack-numbers@treelinehq/machinepack-numbers machinepack-passwords@mikermcneil/machinepack-passwords machinepack-paths@treelinehq/machinepack-paths machinepack-process@treelinehq/machinepack-process machinepack-reqres@treelinehq/machinepack-reqres machinepack-sessionauth@treelinehq/machinepack-sessionauth machinepack-sockets@sgress454/machinepack-sockets machinepack-strings@treelinehq/machinepack-strings machinepack-urls@mikermcneil/machinepack-urls machinepack-util@treelinehq/machinepack-util machinepack-waterline@treelinehq/machinepack-waterline machinepack-sails@treelinehq/machinepack-sails --save --save-exact"
+    "test": "echo 'See the section on 'How do I run the tests?' in README.md.'"
   },
   "keywords": [
     "sails",
@@ -21,31 +18,14 @@
   "author": "The Sails Company",
   "license": "MIT",
   "dependencies": {
-    "machinepack-arrays": "5.4.0",
-    "machinepack-booleans": "0.1.1",
-    "machinepack-console": "0.1.1",
-    "machinepack-datetime": "1.4.0",
-    "machinepack-dictionaries": "2.2.0",
-    "machinepack-emailaddresses": "0.4.0",
-    "machinepack-fs": "10.0.0",
-    "machinepack-gravatar": "1.2.0",
-    "machinepack-http": "3.1.2",
-    "machinepack-ifthen": "1.3.0",
-    "machinepack-json": "2.0.1",
-    "machinepack-mailgun": "0.6.0",
-    "machinepack-math": "1.2.0",
-    "machinepack-numbers": "0.1.1",
-    "machinepack-passwords": "2.3.0",
-    "machinepack-paths": "2.0.3",
-    "machinepack-process": "2.0.2",
-    "machinepack-reqres": "0.3.1",
-    "machinepack-sails": "0.2.0",
-    "machinepack-sessionauth": "0.3.2",
-    "machinepack-sockets": "2.0.1",
-    "machinepack-strings": "5.1.0",
-    "machinepack-urls": "6.0.1",
-    "machinepack-util": "6.1.2",
-    "machinepack-waterline": "0.1.1"
+    "machinepack-fs": "^10.0.0-0",
+    "machinepack-gravatar": "^2.0.0",
+    "machinepack-http": "^4.0.0-1",
+    "machinepack-mailgun": "^4.0.0-0",
+    "machinepack-passwords": "^3.0.0-0",
+    "machinepack-process": "^4.0.0-0",
+    "machinepack-strings": "^5.2.0-0",
+    "machinepack-stripe": "^3.0.0"
   },
   "repository": {
     "type": "git",
