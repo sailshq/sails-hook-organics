@@ -482,4 +482,11 @@ var result = await sails.dive(50, async (loot, dive)=>{
 ```
 
 
-
+Another way maybe:
+```js
+// Compute 50th value of the fibonacci sequence:
+var result = await sails.recursively(50, async (soFar, recurse)=>{
+  if (soFar<= 1) { return 1; }
+  return await recurse(soFar - 1) + await recurse(soFar - 2);
+});
+```

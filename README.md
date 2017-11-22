@@ -61,6 +61,15 @@ var randomString = stdlib('strings').random();
 
 ```
 .
+├── flow
+│   ├── build
+│   ├── dive
+│   ├── each
+│   ├── map
+│   ├── simultaneously
+│   ├── pause
+│   └── whilst
+│
 ├── strings
 │   ├── ensureUniq
 │   ├── random
