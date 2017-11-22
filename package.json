@@ -21,7 +21,7 @@
     "machinepack-fs": "^10.0.0-0",
     "machinepack-gravatar": "^2.0.0",
     "machinepack-http": "^4.0.0-1",
-    "machinepack-mailgun": "^4.0.0-0",
+    "machinepack-mailgun": "^0.8.0-1",
     "machinepack-passwords": "^3.0.0-0",
     "machinepack-process": "^4.0.0-0",
     "machinepack-strings": "^5.2.0-0",
