@@ -28,6 +28,7 @@
     "machinepack-strings": "^5.2.0-0",
     "machinepack-stripe": "^3.0.0"
   },
+  "main": "lib/index.js",
   "repository": {
     "type": "git",
     "url": "git@github.com:sailsjs/stdlib.git"
