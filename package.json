@@ -3,6 +3,7 @@
   "version": "0.9.1",
   "description": "Standard library for Node/Sails applications. Hand-picked and maintained by the Sails.js core team.",
   "scripts": {
+    "sandbox": "node -i -e 'global.stdlib = require(\"./\");  global.customizedStdlib = require(\"./\").customize({arginStyle: \"serial\", execStyle: \"immediate\"});'",
     "test": "echo 'See the section on 'How do I run the tests?' in README.md.'"
   },
   "keywords": [

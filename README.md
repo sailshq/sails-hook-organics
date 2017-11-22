@@ -24,9 +24,12 @@ sails.stdlib = require('sails-stdlib')
 Then:
 
 ```js
-var result = await sails.stdlib('passwords').hashPassword({
+var hashedPassword = await sails.stdlib('passwords').hashPassword({
   password: 'keyboardcat'
 });
+var randomString = await sails.stdlib('strings').random();
+// …
+var anotherWayToGetRandomString = sails.stdlib('strings').random().now();
 ```
 
 Or:
@@ -34,7 +37,17 @@ Or:
 ```js
 var Passwords = sails.stdlib('passwords').customize({arginStyle:'serial'});
 
-var result = await Passwords.hashPassword('keyboardcat');
+var hashedPassword = await Passwords.hashPassword('keyboardcat');
+var randomString = sails.stdlib('strings').random().now();
+```
+
+Or even:
+
+```js
+sails.stdlib = require('sails-stdlib').customize({arginStyle:'serial', execStyle:'immediate'});
+
+var hashedPassword = await sails.stdlib('passwords').hashPassword('keyboardcat');
+var randomString = sails.stdlib('strings').random();
 ```
 
 ## Available methods

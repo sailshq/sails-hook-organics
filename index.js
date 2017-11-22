@@ -2,14 +2,6 @@
  * Module dependencies
  */
 
-var xstrings = require('machinepack-strings');
-var xfs = require('machinepack-fs');
-var xhttp = require('machinepack-http');
-var xprocess = require('machinepack-process');
-var xgravatar = require('machinepack-gravatar');
-var xpasswords = require('machinepack-passwords');
-var xmailgun = require('machinepack-mailgun');
-var xstripe = require('machinepack-stripe');
 var PACKAGE_JSON = require('./package.json');
 
 
@@ -41,7 +33,7 @@ module.exports = function loadSailsStdlibPg (slug, customUsageOpts){
       // for...
       // Any Occasion
       case 'strings':
-        return xstrings;
+        return require('machinepack-strings');
       case 'flow':
         throw new Error('(work in progress)');
 
@@ -49,28 +41,28 @@ module.exports = function loadSailsStdlibPg (slug, customUsageOpts){
       // for...
       // Scripts and NPM Packages
       case 'fs':
-        return xfs;
+        return require('machinepack-fs');
 
       case 'http':
-        return xhttp;
+        return require('machinepack-http');
 
       case 'process':
-        return xprocess;
+        return require('machinepack-process');
 
 
       // for...
       // App Servers & Web APIs
       case 'gravatar':
-        return xgravatar;
+        return require('machinepack-gravatar');
 
       case 'passwords':
-        return xpasswords;
+        return require('machinepack-passwords');
 
       case 'mailgun':
-        return xmailgun;
+        return require('machinepack-mailgun');
 
       case 'stripe':
-        return xstripe;
+        return require('machinepack-stripe');
 
 
       // for...
