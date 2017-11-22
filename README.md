@@ -16,10 +16,13 @@ npm install sails-stdlib --save
 
 ```js
 var stdlib = require('sails-stdlib');
+```
 
-//OR:
+Or:
+```js
 sails.stdlib = require('sails-stdlib')
 ```
+
 
 Then:
 
@@ -32,10 +35,14 @@ var randomString = await sails.stdlib('strings').random();
 var anotherWayToGetRandomString = sails.stdlib('strings').random().now();
 ```
 
-Or:
+
+### Custom usage
+
+You can also customize your desired usage pattern:
 
 ```js
-var Passwords = sails.stdlib('passwords').customize({arginStyle:'serial'});
+var stdlib = require('sails-stdlib');
+var Passwords = stdlib('passwords').customize({arginStyle:'serial'});
 
 var hashedPassword = await Passwords.hashPassword('keyboardcat');
 var randomString = sails.stdlib('strings').random().now();
@@ -44,10 +51,10 @@ var randomString = sails.stdlib('strings').random().now();
 Or even:
 
 ```js
-sails.stdlib = require('sails-stdlib').customize({arginStyle:'serial', execStyle:'immediate'});
+var stdlib = require('sails-stdlib').customize({arginStyle:'serial', execStyle:'immediate'});
 
-var hashedPassword = await sails.stdlib('passwords').hashPassword('keyboardcat');
-var randomString = sails.stdlib('strings').random();
+var hashedPassword = await stdlib('passwords').hashPassword('keyboardcat');
+var randomString = stdlib('strings').random();
 ```
 
 ## Available methods
