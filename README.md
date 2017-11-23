@@ -83,8 +83,8 @@ var randomString = stdlib('strings').random();
 │   ├── ls
 │   ├── mkdir
 │   ├── mv
-│   ├── read-json
-│   ├── read-stream
+│   ├── readJson
+│   ├── readStream
 │   ├── read
 │   ├── rmrf
 │   ├── template
