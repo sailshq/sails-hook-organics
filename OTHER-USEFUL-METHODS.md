@@ -490,3 +490,17 @@ var result = await sails.recursively(50, async (soFar, recurse)=>{
   return await recurse(soFar - 1) + await recurse(soFar - 2);
 });
 ```
+
+```js
+await stdlib('flow').repeatedly(async()=>{
+  if (await User.count() > 30) {
+    return true;
+  }
+  await stdlib('flow').pause(30000);
+});
+```
+
+
+```js
+customizedStdlib('flow').simultaneously({ x: async()=>3, y: ()=>-97, z: async()=>{  await customizedStdlib('flow').pause(500); return 14; }, p: async()=>{  await customizedStdlib('flow').pause(400); return 14; } }).log()
+```
