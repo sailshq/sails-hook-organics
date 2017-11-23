@@ -1,6 +1,6 @@
 {
   "name": "sails-stdlib",
-  "version": "0.10.2",
+  "version": "0.10.3",
   "description": "Standard library for Node/Sails applications. Hand-picked and maintained by the Sails.js core team.",
   "scripts": {
     "sandbox": "node -i -e 'global.stdlib = require(\"./\");'",
