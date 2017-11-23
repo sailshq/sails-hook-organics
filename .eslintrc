@@ -20,6 +20,10 @@
     "ecmaVersion": 5
   },
 
+  "globals": {
+    "Promise": true
+  },
+
   "rules": {
     "callback-return":              [2, ["callback", "cb", "next", "done", "proceed"]],
     "camelcase":                    [1, {"properties": "always"}],
