@@ -17,7 +17,11 @@
   },
 
   "parserOptions": {
-    "ecmaVersion": 8
+    "ecmaVersion": 5
+  },
+
+  "globals": {
+    "Promise": true
   },
 
   "rules": {
@@ -30,13 +34,18 @@
     "handle-callback-err":          [2],
     "indent":                       [1, 2, {"SwitchCase": 1}],
     "linebreak-style":              [2, "unix"],
+    "no-dupe-keys":                 [2],
+    "no-duplicate-case":            [2],
+    "no-labels":                    [2],
     "no-mixed-spaces-and-tabs":     [2, "smart-tabs"],
+    "no-redeclare":                 [2],
     "no-return-assign":             [2, "always"],
     "no-sequences":                 [2],
     "no-trailing-spaces":           [1],
     "no-undef":                     [2],
     "no-unexpected-multiline":      [1],
     "no-unused-vars":               [1],
+    "no-use-before-define":         [2, { "functions": false }],
     "one-var":                      [2, "never"],
     "quotes":                       [1, "single", { "avoidEscape": false, "allowTemplateLiterals": true }],
     "semi":                         [2, "always"]

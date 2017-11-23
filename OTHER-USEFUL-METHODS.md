@@ -482,4 +482,30 @@ var result = await sails.dive(50, async (loot, dive)=>{
 ```
 
 
+Another way maybe:
+```js
+// Compute 50th value of the fibonacci sequence:
+var result = await sails.recursively(50, async (soFar, recurse)=>{
+  if (soFar<= 1) { return 1; }
+  return await recurse(soFar - 1) + await recurse(soFar - 2);
+});
+```
+
+```js
+await stdlib('flow').until(async()=>{
+  if (await User.count() > 30) {
+    return true;
+  }
+  await stdlib('flow').pause(30000);
+});
+```
+
+
+```js
+customizedStdlib('flow').simultaneously({ x: async()=>3, y: ()=>-97, z: async()=>{  await customizedStdlib('flow').pause(500); return 14; }, p: async()=>{  await customizedStdlib('flow').pause(400); return 14; } }).log()
+```
+
+```js
+customizedStdlib('flow').until(async()=>{ await customizedStdlib('flow').pause(1000); return (Math.random()>0.5?true:false); }).log()
+```
 

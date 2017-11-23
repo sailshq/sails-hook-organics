@@ -1,10 +1,12 @@
 {
   "name": "sails-stdlib",
-  "version": "0.9.2",
+  "version": "0.10.0",
   "description": "Standard library for Node/Sails applications. Hand-picked and maintained by the Sails.js core team.",
   "scripts": {
-    "sandbox": "node -i -e 'global.stdlib = require(\"./\");  global.customizedStdlib = require(\"./\").customize({arginStyle: \"serial\", execStyle: \"immediate\"});'",
-    "test": "echo 'See the section on 'How do I run the tests?' in README.md.'"
+    "sandbox": "node -i -e 'global.stdlib = require(\"./\");'",
+    "test": "npm run lint && npm run custom-tests",
+    "custom-tests": "echo 'No custom tests yet.'",
+    "lint": "node ./node_modules/eslint/bin/eslint . --max-warnings=0 && echo '✔  Your code looks good.'"
   },
   "keywords": [
     "sails",
@@ -19,6 +21,9 @@
   "author": "The Sails Company",
   "license": "MIT",
   "dependencies": {
+    "@sailshq/lodash": "^3.10.2",
+    "async": "2.0.1",
+    "machine": "^15.0.0-14",
     "machinepack-fs": "^10.0.0-0",
     "machinepack-gravatar": "^2.0.0",
     "machinepack-http": "^4.0.0-1",
@@ -32,5 +37,8 @@
   "repository": {
     "type": "git",
     "url": "git@github.com:sailsjs/stdlib.git"
+  },
+  "devDependencies": {
+    "eslint": "3.19.0"
   }
 }
