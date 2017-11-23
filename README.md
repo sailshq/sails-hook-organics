@@ -65,10 +65,9 @@ var randomString = stdlib('strings').random();
 │   ├── build
 │   ├── dive
 │   ├── each
-│   ├── map
-│   ├── simultaneously
 │   ├── pause
-│   └── whilst
+│   ├── simultaneously
+│   └── until
 │
 ├── strings
 │   ├── ensureUniq
