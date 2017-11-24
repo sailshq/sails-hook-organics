@@ -5,33 +5,44 @@
   "scripts": {
     "sandbox": "node -i -e 'global.stdlib = require(\"./\");'",
     "test": "npm run lint && npm run custom-tests",
-    "custom-tests": "echo 'No custom tests yet.'",
+    "custom-tests": "node ./node_modules/mocha/bin/mocha && echo \"Custom tests all passed.\" && echo",
     "lint": "node ./node_modules/eslint/bin/eslint . --max-warnings=0 && echo '✔  Your code looks good.'"
   },
   "keywords": [
     "sails",
     "stdlib",
     "waterline",
-    "node-machine",
-    "machinepack",
-    "machine",
-    "machinepacks",
-    "machines"
+    "flow-control",
+    "await",
+    "bcrypt",
+    "hash-password",
+    "encrypt-password",
+    "passwords",
+    "avatar",
+    "gravatar",
+    "email",
+    "mailgun-api",
+    "mailgun",
+    "charge-credit-card",
+    "payment-processing",
+    "credit-card",
+    "stripe-api",
+    "stripe"
   ],
   "author": "The Sails Company",
   "license": "MIT",
   "dependencies": {
     "@sailshq/lodash": "^3.10.2",
     "async": "2.0.1",
+    "bcryptjs": "2.3.0",
     "machine": "^15.0.0-14",
+    "mailcomposer": "2.1.0",
+    "mailgun-js": "0.7.15",
     "machinepack-fs": "^10.0.0-0",
-    "machinepack-gravatar": "^2.0.0",
     "machinepack-http": "^4.0.0-1",
-    "machinepack-mailgun": "^0.8.0-1",
-    "machinepack-passwords": "^3.0.0-0",
     "machinepack-process": "^4.0.0-0",
     "machinepack-strings": "^5.2.0-0",
-    "machinepack-stripe": "^3.0.0"
+    "stripe": "4.9.1"
   },
   "main": "lib/sails-stdlib.js",
   "repository": {
@@ -39,6 +50,7 @@
     "url": "git@github.com:sailsjs/stdlib.git"
   },
   "devDependencies": {
-    "eslint": "3.19.0"
+    "eslint": "3.19.0",
+    "mocha": "3.0.2"
   }
 }
