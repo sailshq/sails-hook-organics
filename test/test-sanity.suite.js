@@ -1,6 +1,6 @@
 describe('sanity', function(){
   describe('require(\'…\')', function(){
-    let stdlib;
+    var stdlib;
     it('worked', function(){
       stdlib = require('./');
     });
