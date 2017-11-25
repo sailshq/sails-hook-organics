@@ -2,7 +2,7 @@ describe('sanity', function(){
   describe('when loaded with require(\'…\'), it', function(){
     var stdlib;
     it('worked', function(){
-      stdlib = require('../');
+      stdlib = require('../../');
     });
     it('is callable', function(){
       assert(_.isFunction(stdlib));
