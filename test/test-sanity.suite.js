@@ -1,8 +1,19 @@
 describe('sanity', function(){
-  describe('require(\'…\')', function(){
+  describe('when loaded with require(\'…\'), it', function(){
     var stdlib;
     it('worked', function(){
-      stdlib = require('./');
+      stdlib = require('../');
+    });
+    it('is callable', function(){
+      assert(_.isFunction(stdlib));
+    });
+    it('has a .customize() method', function(){
+      assert(_.isFunction(stdlib.customize));
+    });
+  });//∂
+  describe('when accessed via the convenience global exposed for our test suites, it', function(){
+    it('exists', function(){
+      assert(stdlib);
     });
     it('is callable', function(){
       assert(_.isFunction(stdlib));

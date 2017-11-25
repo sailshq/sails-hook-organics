@@ -5,7 +5,8 @@ before(function(done){
   var GLOBALS_FOR_TEST_SUITES = {
     assert: require('assert'),
     util: require('util'),
-    _: require('@sailshq/lodash')
+    _: require('@sailshq/lodash'),
+    stdlib: require('../../')
   };
 
   Object.keys(GLOBALS_FOR_TEST_SUITES).forEach(function(desiredGlobalVarName){

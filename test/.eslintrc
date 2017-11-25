@@ -20,7 +20,8 @@
   "globals": {
     "assert": true,
     "util": true,
-    "_": true
+    "_": true,
+    "stdlib": true
     // ^^ Any globals exposed in test suites for convenience go here.
   }
 
