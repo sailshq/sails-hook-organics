@@ -379,8 +379,8 @@ var Mailgun = require('machinepack-mailgun');
 
 
 // Get a gravatar for an email address.
-// (http://node-machine.org/machinepack-gravatar/get-image-url)
-var imageUrl = Gravatar.getImageUrl({
+// (http://node-machine.org/machinepack-gravatar/get-avatar-url)
+var imageUrl = Gravatar.getAvatarUrl({
   emailAddress: 'amy@gonzales-enterprises.com',
   gravatarSize: 400
 }).execSync();

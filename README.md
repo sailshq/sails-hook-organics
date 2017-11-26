@@ -93,7 +93,7 @@ var anotherWayToGetRandomString = sails.stdlib('strings').random().now();
 │   └── executeCommand
 │
 ├── gravatar
-│   └── getImageUrl
+│   └── getAvatarUrl
 │
 ├── mailgun
 │   └── sendHtmlEmail
