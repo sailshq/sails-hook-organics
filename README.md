@@ -76,7 +76,6 @@ var anotherWayToGetRandomString = sails.stdlib('strings').random().now();
 │   ├── readStream
 │   ├── read
 │   ├── rmrf
-│   ├── template
 │   ├── writeJson
 │   ├── writeStream
 │   └── write
