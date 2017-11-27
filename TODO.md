@@ -9,3 +9,37 @@ todo
 • Publish 0.11
 • Publish a patch w/ the readme saying that further efforts are in "sails-hook-essentials" now, so the npmjs.com page gets updated
 • Then make it sails-hook-essentials, add a note to the readme about the name change, and publish that as sails-hook-essentials@1.0.0-0.
+
+
+
+
+
+// - - - - - - - - - - - - - - - - - - - - - - - -
+var customerId = await stdlib('stripe').saveBillingInfo({
+  paymentSource: 'agja8dsg8j28jeg2j',
+  plan: 'pro',
+  emailAddress: 'gaasddgs@example.com',
+});
+
+stdlib('stripe').saveBillingInfo({
+  stripeCustomer: customerId,
+  emailAddress: 'some.other.email@example.com'
+});
+
+stdlib('stripe').saveBillingInfo({
+  stripeCustomer: customerId,
+  paymentSource: 'a9d9hg1h3k13kad'
+});
+
+stdlib('stripe').saveBillingInfo({
+  stripeCustomer: customerId,
+  emailAddress: 'yet.another@example.com',
+  plan: ''
+});
+
+stdlib('stripe').saveBillingInfo({
+  stripeCustomer: customerId,
+  paymentSource: ''
+});
+// - - - - - - - - - - - - - - - - - - - - - - - -
+
