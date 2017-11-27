@@ -111,7 +111,7 @@ var anotherWayToGetRandomString = sails.stdlib('strings').random().now();
 
 ## Where did all the rest go?
 
-See OTHER_USEFUL_METHODS.md for information on how to use the many additional methods that are no longer included by default.
+See [OTHER-USEFUL-METHODS.md](https://github.com/sailshq/stdlib/tree/e9e46be0966c75f339145cf196b0d8882ea9f363/OTHER-USEFUL-METHODS.md) for information on how to use the many additional methods that are no longer included by default.
 
 
 ## Bugs &nbsp; [![NPM version](https://badge.fury.io/js/sails-stdlib.svg)](http://npmjs.com/package/sails-stdlib)
