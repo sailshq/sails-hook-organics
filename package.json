@@ -35,7 +35,7 @@
     "@sailshq/lodash": "^3.10.2",
     "async": "2.0.1",
     "bcryptjs": "2.3.0",
-    "machine": "^15.0.0-16",
+    "machine": "^15.0.0-17",
     "mailcomposer": "2.1.0",
     "mailgun-js": "0.7.15",
     "machinepack-fs": "^12.0.0",
