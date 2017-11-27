@@ -102,10 +102,7 @@ var anotherWayToGetRandomString = sails.stdlib('strings').random().now();
 │   └── hashPassword
 │
 └── stripe
-    ├── createCustomer
-    ├── deleteSource
-    ├── retrieveCustomerDetails
-    └── updateCustomer
+    └── saveBillingInfo
 ```
 
 
