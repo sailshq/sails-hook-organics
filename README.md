@@ -65,21 +65,6 @@ var anotherWayToGetRandomString = sails.stdlib('strings').random().now();
 │   ├── toStream
 │   └── uuid
 │
-├── fs
-│   ├── cp
-│   ├── ensureDir
-│   ├── exists
-│   ├── ls
-│   ├── mkdir
-│   ├── mv
-│   ├── readJson
-│   ├── readStream
-│   ├── read
-│   ├── rmrf
-│   ├── writeJson
-│   ├── writeStream
-│   └── write
-│
 ├── http
 │   ├── del
 │   ├── get
@@ -104,6 +89,36 @@ var anotherWayToGetRandomString = sails.stdlib('strings').random().now();
 └── stripe
     └── saveBillingInfo
 ```
+
+
+<!--
+
+Note:  Currently, the inclusion of "fs" is experimental, and deliberately
+not documented here.  This is because, in most cases, you shouldn't be doing
+stuff to the local filesystem in your production web server code.  That said,
+there are plenty of valid use cases for this in builds, unrelated packages
+and tools, etc- it just isn't worth it to include the methods in these docs
+and potentially confuse people.
+
+Here they are for posterity:
+
+│
+├── fs
+│   ├── cp
+│   ├── ensureDir
+│   ├── exists
+│   ├── ls
+│   ├── mkdir
+│   ├── mv
+│   ├── readJson
+│   ├── readStream
+│   ├── read
+│   ├── rmrf
+│   ├── writeJson
+│   ├── writeStream
+│   └── write
+
+-->
 
 
 ## Where did all the rest go?
