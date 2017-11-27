@@ -1,9 +1,9 @@
 todo
 
-• Mailgun: change apiKey to secret
-• Mailgun: possibly change inputs:
-  · `to` instead of `toEmail`
-  · `from` instead of `fromEmail`
+• ~~Mailgun: change apiKey to secret~~
+• ~~Mailgun: possibly change inputs:~~
+  · ~~`to` instead of `toEmail`~~
+  · ~~`from` instead of `fromEmail`~~
 • Stripe: change apiKey to secret
 • Stripe: change the method names and their inputs and their outputs prbly
 • Publish 0.11
