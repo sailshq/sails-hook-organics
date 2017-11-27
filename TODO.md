@@ -4,7 +4,7 @@ todo
 • ~~Mailgun: possibly change inputs:~~
   · ~~`to` instead of `toEmail`~~
   · ~~`from` instead of `fromEmail`~~
-• Stripe: change apiKey to secret
+• ~~Stripe: change apiKey to secret~~
 • Stripe: change the method names and their inputs and their outputs prbly
 • Publish 0.11
 • Publish a patch w/ the readme saying that further efforts are in "sails-hook-essentials" now, so the npmjs.com page gets updated
