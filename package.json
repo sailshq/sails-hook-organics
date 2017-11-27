@@ -39,7 +39,7 @@
     "mailcomposer": "2.1.0",
     "mailgun-js": "0.7.15",
     "machinepack-fs": "^12.0.0",
-    "machinepack-http": "^4.0.0-1",
+    "machinepack-http": "^5.0.0",
     "machinepack-process": "^4.0.0-0",
     "machinepack-strings": "^5.2.0-0",
     "stripe": "4.9.1"

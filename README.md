@@ -82,7 +82,6 @@ var anotherWayToGetRandomString = sails.stdlib('strings').random().now();
 │
 ├── http
 │   ├── del
-│   ├── getStream
 │   ├── get
 │   ├── patch
 │   ├── post
