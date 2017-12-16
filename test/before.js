@@ -6,7 +6,11 @@ before(function(done){
     assert: require('assert'),
     util: require('util'),
     _: require('@sailshq/lodash'),
-    stdlib: require('../')
+    // ```
+    // organics: …………require('../accessible/dry')…………
+    // ```
+    // TODO: ^^ expose an `organics` global here, but build it so that it's
+    // packs of callables
   };
 
   Object.keys(GLOBALS_FOR_TEST_SUITES).forEach(function(desiredGlobalVarName){

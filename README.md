@@ -1,51 +1,26 @@
-# sails-stdlib
+# sails-hook-organics
 
-Standard library for Node/Sails applications.
+Exposes a set of commonly-used functions ("organics") as built-in helpers in your Sails app.
 
-This package contains a set of hand-picked, trusted modules recommended by the Sails core team.
+This package contains a set of hand-picked, trusted helpers recommended by the
+Sails core team, and designed for use as your standard library when building
+Node/Sails-based applications.
 
 
-## Installation &nbsp; [![NPM version](https://badge.fury.io/js/sails-stdlib.svg)](http://npmjs.com/package/sails-stdlib)
+## Installation &nbsp; [![NPM version](https://badge.fury.io/js/sails-hook-organics.svg)](http://npmjs.com/package/sails-hook-organics)
 
 ```bash
-npm install sails-stdlib --save
+npm install sails-hook-organics --save
 ```
 
 
 ## Usage
 
 ```js
-var stdlib = require('sails-stdlib');
+var hashedPassword = await sails.helpers.passwords.hashPassword('keyboardcat');
+var randomString = sails.helpers.strings.random();
 ```
 
-Or:
-```js
-sails.stdlib = require('sails-stdlib')
-```
-
-
-Then:
-
-```js
-var hashedPassword = await stdlib('passwords').hashPassword('keyboardcat');
-var randomString = stdlib('strings').random();
-```
-
-
-### Custom usage
-
-You can also customize your desired usage pattern:
-
-```js
-var stdlib = require('sails-stdlib').customize({arginStyle:'named', execStyle:'deferred'});
-
-var hashedPassword = await sails.stdlib('passwords').hashPassword({
-  password: 'keyboardcat'
-});
-var randomString = await sails.stdlib('strings').random();
-// …
-var anotherWayToGetRandomString = sails.stdlib('strings').random().now();
-```
 
 ## Available methods
 
@@ -123,10 +98,10 @@ Here they are for posterity:
 
 ## Where did all the rest go?
 
-See [OTHER-USEFUL-METHODS.md](https://github.com/sailshq/stdlib/blob/a27db6c93e7333f5036a54ceb13a2e3b3fa0ae26/OTHER-USEFUL-METHODS.md) for information on how to use the many additional methods that are no longer included by default.
+See [OTHER-USEFUL-METHODS.md](https://github.com/sailshq/sails-hook-organics/blob/a27db6c93e7333f5036a54ceb13a2e3b3fa0ae26/OTHER-USEFUL-METHODS.md) for information on how to use the many additional methods that are no longer included by default.
 
 
-## Bugs &nbsp; [![NPM version](https://badge.fury.io/js/sails-stdlib.svg)](http://npmjs.com/package/sails-stdlib)
+## Bugs &nbsp; [![NPM version](https://badge.fury.io/js/sails-hook-organics.svg)](http://npmjs.com/package/sails-hook-organics)
 
 To report a bug, [click here](http://sailsjs.com/bugs).  Someone will look into it ASAP.
 
@@ -147,12 +122,74 @@ In the mean time, if you see how to fix the problem and have a moment to prepare
 
 Please observe the guidelines and conventions laid out in the [Sails project contribution guide](http://sailsjs.com/documentation/contributing) when opening issues or submitting pull requests.
 
-[![NPM](https://nodei.co/npm/sails-stdlib.png?downloads=true)](http://npmjs.com/package/sails-stdlib)
+[![NPM](https://nodei.co/npm/sails-hook-organics.png?downloads=true)](http://npmjs.com/package/sails-hook-organics)
 
 
 ## Help
 
 First, please check out the [relevant documentation](#usage).  If you are having trouble or have questions, click [here](http://sailsjs.com/support)!
+
+
+<!--
+
+## Advanced Usage
+
+For compatibility, or for use outside of a Sails app, these helper definitions
+can also be accessed directly:
+
+```js
+var organics = require('sails-hook-organics/accessible/dry');
+// => raw definitions, like:
+// {
+//   …
+//   stripe: {
+//     description: 'Communicate with the Stripe API to charge credit cards, etc.',
+//     methodDefsByIdt: {
+//       saveBillingInfo: {
+//         inputs: …,
+//         exits: …,
+//         fn: …
+//       }
+//     }
+//   },
+//   …
+// }
+
+
+var yourLibrary = function(slug){
+  // …
+  // For example of how to build these defs into Callables, see:
+  // http://github.com/sailshq/sails-hook-organics/tree/v0.11.2
+  // …
+};
+```
+
+
+
+Then, e.g.:
+
+```js
+var hashedPassword = await yourLibrary('passwords').hashPassword('keyboardcat');
+var randomString = yourLibrary('strings').random();
+```
+
+
+### Custom usage
+
+You can also customize your desired usage pattern:
+
+```js
+var stdlib = require('sails-stdlib').customize({arginStyle:'named', execStyle:'deferred'});
+
+var hashedPassword = await sails.stdlib('passwords').hashPassword({
+  password: 'keyboardcat'
+});
+var randomString = await sails.stdlib('strings').random();
+// …
+var anotherWayToGetRandomString = sails.stdlib('strings').random().now();
+```
+
+ -->
 
 
 ## FAQ
@@ -169,11 +206,11 @@ We are constantly looking for ways to improve this library. If we're missing som
 
 #### Does this use semver?
 
-Dependency versions are pinned, and all releases of `sails-stdlib` are carefully tested to ensure strict semantic versioning.
+3rd party dependency versions are pinned, and all releases of this package are carefully considered and tested to adhere to semantic versioning.
 
 #### What does the future hold?
 
-The roadmap for this library is flexible and we're open to ideas.  The important thing is that we remain relentlessly focused on stability and versatility,
+The roadmap for this package is flexible and we're open to ideas.  The important thing is that we remain relentlessly focused on stability and versatility,
 while keeping the library relatively lightweight and the usage intuitive.  Secondary to that, most of the immediate-term
 improvements we're interested in making are related to performance.
 

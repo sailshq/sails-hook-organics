@@ -1,9 +1,8 @@
 {
-  "name": "sails-stdlib",
+  "name": "sails-hook-organics",
   "version": "0.11.2",
   "description": "Standard library for Node/Sails applications. Hand-picked and maintained by the Sails.js core team.",
   "scripts": {
-    "sandbox": "node -i -e 'global.stdlib = require(\"./\");'",
     "test": "npm run lint && npm run custom-tests",
     "custom-tests": "node ./node_modules/mocha/bin/mocha && echo \"Custom tests all passed.\" && echo",
     "lint": "node ./node_modules/eslint/bin/eslint . --max-warnings=0 && echo '✔  Your code looks good.'"
@@ -13,6 +12,7 @@
     "stdlib",
     "waterline",
     "flow-control",
+    "sails-stdlib",
     "await",
     "bcrypt",
     "hash-password",
@@ -29,7 +29,7 @@
     "stripe-api",
     "stripe"
   ],
-  "author": "The Sails Company",
+  "author": "Mike McNeil",
   "license": "MIT",
   "dependencies": {
     "@sailshq/lodash": "^3.10.2",
@@ -44,10 +44,10 @@
     "mailgun-js": "0.13.1",
     "stripe": "5.4.0"
   },
-  "main": "lib/sails-stdlib.js",
+  "main": "lib/sails-hook-organics.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:sailsjs/stdlib.git"
+    "url": "git@github.com:sailsjs/sails-hook-organics.git"
   },
   "devDependencies": {
     "eslint": "4.11.0",
