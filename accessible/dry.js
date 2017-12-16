@@ -43,7 +43,7 @@ module.exports = _.reduce(LIBRARY_CONTENTS, function(expandedPgInfoBySlug, pgInf
         // for...
         // Miscreants
         default:
-          throw new Error('Unrecognized package slug: `'+pgSlug+'`.  Please choose from the list of packages listed at https://npmjs.com/package/sails-hook-organics');
+          throw new Error('Consistency violation: Encountered unrecognized pack/category: `'+pgSlug+'`.  Please choose from the list of packs/categories listed at https://npmjs.com/package/sails-hook-organics');
       }
 
       return helpersByIdentity;
