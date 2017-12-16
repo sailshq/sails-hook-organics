@@ -6,7 +6,6 @@ This package contains a set of hand-picked, trusted helpers recommended by the
 Sails core team, and designed for use as your standard library when building
 Node/Sails-based applications.
 
-
 ## Installation &nbsp; [![NPM version](https://badge.fury.io/js/sails-hook-organics.svg)](http://npmjs.com/package/sails-hook-organics)
 
 ```bash
@@ -194,6 +193,19 @@ var anotherWayToGetRandomString = sails.stdlib('strings').random().now();
 
 ## FAQ
 
+#### Why "organics"?
+
+We refer to the kind of built-in helper provided by this hook as an "organic" helper, in the sense that it is something fundamental and inherent.
+This hook is also "organic" in the sense that its helpers work kind of like genes-- when you use this hook in an app, you get all of its helpers,
+even if you're not using some of them right away.
+
+The reason sails-hook-organics is extrapolated into a separate package, rather than being baked in to `sails`, is so that you can choose not to install it in your app-- i.e. if you don't need or want the functionality it provides.
+
+Using this hook is completely optional.  Nevertheless, keep in mind that any particular helper you'd rather not use can always be superceded or overridden by an inline helper in your app.  For example, if you need to write your own algorithm for generating unique, pseudorandom string tokens, you might override `strings.random()` in your app (`api/helpers/strings/random.js`).  Or if you want to use Paypal instead of Stripe for billing, you might roll your own, separate `saveBillingInfo()` helper (`api/helpers/paypal/save-billing-info.js`).
+
+> Note: In both customization examples mentioned above, the ideal approach (for interoperability's sake) would be to mimic the existing interface as much as possible (e.g. method names, inputs, & exits).  But really, that's icing on the cake.  This hook provides supplemental tools designed to make it faster and easier for you to build a stable, maintainable application.  It's up to you to build any other custom logic you need for your app-- and it's our job, as your framework, to get out of your way and let you do that.
+
+
 #### I have an idea for how to improve...
 
 We'd like to hear it!  The best way to share your ideas is to contribute (see below).
@@ -218,7 +230,6 @@ improvements we're interested in making are related to performance.
 #### I'd like to help work on this.
 
 Awesome!  Please have a read through the [contribution guide](http://sailsjs.com/contribute), if you haven't already.  If you're actively interested in helping to shape the future usage and roadmap for this library, we welcome youre input!  Please [introduce yourself](https://sailsjs.com/contact), let us know a rough guess at the # of hours per week you'll be able to commit, and someone from the core team will contact you ASAP.
-
 
 ## License
 
