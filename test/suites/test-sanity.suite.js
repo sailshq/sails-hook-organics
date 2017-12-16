@@ -25,7 +25,7 @@ describe.skip('sanity', function(){
 });//∂
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-// TODO: update tests to build callabales first
+// TODO: update tests to build callables first
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
