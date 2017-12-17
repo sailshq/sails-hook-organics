@@ -16,8 +16,14 @@ var LIBRARY_CONTENTS = require('../lib/private/LIBRARY_CONTENTS');
 
 module.exports = _.reduce(LIBRARY_CONTENTS, function(expandedPgInfoBySlug, pgInfo, pgSlug){
 
+  // If this pack ends up being external, this variable will be used
+  // to hold the toJSON-ed dry data from that pack (to avoid unnecessarily
+  // running that extraction logic over and over again)
+  var externalPackDryData;
+
   expandedPgInfoBySlug[pgSlug] = _.extend({}, _.omit(pgInfo, 'methodIdts'), {
     defs: _.reduce(LIBRARY_CONTENTS[pgSlug].methodIdts, function(helpersByIdentity, helperIdentity){
+
       switch (pgSlug) {
 
         // for...
@@ -26,8 +32,10 @@ module.exports = _.reduce(LIBRARY_CONTENTS, function(expandedPgInfoBySlug, pgInf
         case 'fs':
         case 'http':
         case 'process':
-          var dryPg = require('machinepack-'+pgSlug).toJSON();
-          helpersByIdentity[helperIdentity] = _.pick(dryPg.defs, LIBRARY_CONTENTS[pgSlug].methodIdts);
+          if (!externalPackDryData) {
+            externalPackDryData = require('machinepack-'+pgSlug).toJSON();
+          }
+          helpersByIdentity[helperIdentity] = externalPackDryData.defs[helperIdentity];
           break;
 
         // for...
