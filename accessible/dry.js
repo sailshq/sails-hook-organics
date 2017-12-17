@@ -22,6 +22,7 @@ module.exports = _.reduce(LIBRARY_CONTENTS, function(expandedPgInfoBySlug, pgInf
   var externalPackDryData;
 
   expandedPgInfoBySlug[pgSlug] = _.extend({}, _.omit(pgInfo, 'methodIdts'), {
+    name: pgInfo.name || '.'+pgSlug,
     defs: _.reduce(LIBRARY_CONTENTS[pgSlug].methodIdts, function(helpersByIdentity, helperIdentity){
 
       switch (pgSlug) {
@@ -55,8 +56,8 @@ module.exports = _.reduce(LIBRARY_CONTENTS, function(expandedPgInfoBySlug, pgInf
       }
 
       return helpersByIdentity;
-    }, {})
-  });
+    }, {})//∞
+  });//</ _.extend() >
 
   return expandedPgInfoBySlug;
-}, {});
+}, {});//∞
