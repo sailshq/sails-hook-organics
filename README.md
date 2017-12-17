@@ -68,7 +68,7 @@ var randomString = sails.helpers.strings.random();
 <!--
 
 Note:  Currently, the inclusion of "fs" is experimental, and deliberately
-not documented here.  This is because, in most cases, you shouldn't be doing
+not documented here yet.  This is because, in most cases, you shouldn't be doing
 stuff to the local filesystem in your production web server code.  That said,
 there are plenty of valid use cases for this in builds, unrelated packages
 and tools, etc- it just isn't worth it to include the methods in these docs

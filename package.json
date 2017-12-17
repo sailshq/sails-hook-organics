@@ -53,6 +53,10 @@
     "eslint": "4.11.0",
     "mocha": "3.0.2"
   },
+  "sails": {
+    "isHook": true,
+    "hookName": "organics"
+  },
   "engines": {
     "node": ">=8"
   }
