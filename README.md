@@ -197,19 +197,22 @@ var anotherWayToGetRandomString = sails.stdlib('strings').random().now();
 
 We refer to the kind of built-in helper provided by this hook as an "organic" helper, in the sense that it is something fundamental and inherent.
 This hook is also "organic" in the sense that its helpers work kind of like genes-- when you use this hook in an app, you get all of its helpers,
-even if you're not using some of them right away.
+even if you're not using some of them right away.  Finally, these helpers are also certified "organic" in that they have been hand-checked by
+the Sails core team to make sure they're solid and up to date.  (Because we use them ourselves.)
 
-The reason sails-hook-organics is extrapolated into a separate package, rather than being baked in to `sails`, is so that you can choose not to install it in your app-- i.e. if you don't need or want the functionality it provides.
+#### Do I have to use this?
 
-Using this hook is completely optional.  Nevertheless, keep in mind that any particular helper you'd rather not use can always be superceded or overridden by an inline helper in your app.  For example, if you need to write your own algorithm for generating unique, pseudorandom string tokens, you might override `strings.random()` in your app (`api/helpers/strings/random.js`).  Or if you want to use Paypal instead of Stripe for billing, you might roll your own, separate `saveBillingInfo()` helper (`api/helpers/paypal/save-billing-info.js`).
+No, using this hook is completely optional.
+
+The reason sails-hook-organics is extrapolated into a separate package, rather than being baked in to `sails`, is so that you can choose not to install it in your app-- i.e. if you don't need or want the functionality it provides, or if you'd prefer to do things differently.
+
+Nevertheless, keep in mind that any particular helper you'd rather not use can always be superceded or overridden by an inline helper in your app.  For example, if you need to write your own algorithm for generating unique, pseudorandom string tokens, you might override `strings.random()` in your app (`api/helpers/strings/random.js`).  Or if you want to use Paypal instead of Stripe for billing, you might roll your own, separate `saveBillingInfo()` helper (`api/helpers/paypal/save-billing-info.js`).
 
 > Note: In both customization examples mentioned above, the ideal approach (for interoperability's sake) would be to mimic the existing interface as much as possible (e.g. method names, inputs, & exits).  But really, that's icing on the cake.  This hook provides supplemental tools designed to make it faster and easier for you to build a stable, maintainable application.  It's up to you to build any other custom logic you need for your app-- and it's our job, as your framework, to get out of your way and let you do that.
-
 
 #### I have an idea for how to improve...
 
 We'd like to hear it!  The best way to share your ideas is to contribute (see below).
-
 
 #### I wish this supported...
 
@@ -225,7 +228,6 @@ We are constantly looking for ways to improve this library. If we're missing som
 The roadmap for this package is flexible and we're open to ideas.  The important thing is that we remain relentlessly focused on stability and versatility,
 while keeping the library relatively lightweight and the usage intuitive.  Secondary to that, most of the immediate-term
 improvements we're interested in making are related to performance.
-
 
 #### I'd like to help work on this.
 
