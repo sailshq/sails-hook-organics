@@ -42,6 +42,7 @@ var randomString = sails.helpers.strings.random();
 ├── http
 │   ├── del
 │   ├── get
+│   ├── getStream
 │   ├── patch
 │   ├── post
 │   ├── put
