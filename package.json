@@ -1,6 +1,6 @@
 {
   "name": "sails-hook-organics",
-  "version": "0.13.0",
+  "version": "0.13.1",
   "description": "Standard library for Node/Sails applications. Hand-picked and maintained by the Sails.js core team.",
   "scripts": {
     "test": "npm run lint && npm run custom-tests",
