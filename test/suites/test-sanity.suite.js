@@ -1,27 +1,28 @@
-describe.skip('sanity', function(){
+describe('sanity', function(){
   describe('when loaded with require(\'…\'), it', function(){
-    var stdlib;
-    it('worked', function(){
-      stdlib = require('../../');
-    });
-    it('is callable', function(){
-      assert(_.isFunction(stdlib));
-    });
-    it('has a .customize() method', function(){
-      assert(_.isFunction(stdlib.customize));
-    });
-  });//∂
-  describe('when accessed via the convenience global exposed for our test suites, it', function(){
+    var shOrganics;
     it('exists', function(){
-      assert(stdlib);
+      shOrganics = require('../../');
     });
     it('is callable', function(){
-      assert(_.isFunction(stdlib));
+      assert(_.isFunction(shOrganics));
     });
-    it('has a .customize() method', function(){
-      assert(_.isFunction(stdlib.customize));
+    it('returns something with an .initialize() method', function(){
+      var pretendSailsApp = {};
+      assert(_.isFunction(shOrganics(pretendSailsApp).initialize));
     });
   });//∂
+  // describe('when accessed via the convenience global exposed for our test suites, `sails.stdlib`', function(){
+  //   it('exists', function(){
+  //     assert(sails.stdlib);
+  //   });
+  //   it('is callable', function(){
+  //     assert(_.isFunction(sails.stdlib));
+  //   });
+  //   it('has a .customize() method', function(){
+  //     assert(_.isFunction(sails.stdlib.customize));
+  //   });
+  // });//∂
 });//∂
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
