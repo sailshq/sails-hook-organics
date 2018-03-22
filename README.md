@@ -49,7 +49,8 @@ var randomString = sails.helpers.strings.random();
 │   └── sendHttpRequest
 │
 ├── process
-│   └── executeCommand
+│   ├── executeCommand
+│   └── killChildProcess
 │
 ├── gravatar
 │   └── getAvatarUrl
