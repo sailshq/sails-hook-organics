@@ -46,7 +46,7 @@
   "main": "lib/sails-hook-organics.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:sailsjs/sails-hook-organics.git"
+    "url": "git@github.com:sailshq/sails-hook-organics.git"
   },
   "devDependencies": {
     "eslint": "4.11.0",
