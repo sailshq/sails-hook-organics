@@ -28,9 +28,10 @@ var randomString = sails.helpers.strings.random();
 ├── flow
 │   ├── build
 │   ├── dive
-│   ├── each
+│   ├── forEach
 │   ├── pause
 │   ├── simultaneously
+│   ├── simultaneouslyForEach
 │   └── until
 │
 ├── strings
