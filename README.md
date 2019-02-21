@@ -36,7 +36,6 @@ var randomString = sails.helpers.strings.random();
 │
 ├── strings
 │   ├── ensureUniq
-│   ├── fromStream
 │   ├── random
 │   ├── toStream
 │   ├── template
