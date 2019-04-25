@@ -39,8 +39,6 @@
     "machinepack-http": "^7.0.0",
     "machinepack-process": "^4.0.0-0",
     "machinepack-strings": "^6.0.1",
-    "mailcomposer": "2.1.0",
-    "mailgun-js": "0.13.1",
     "stripe": "5.4.0"
   },
   "main": "lib/sails-hook-organics.js",
