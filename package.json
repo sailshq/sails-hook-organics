@@ -1,6 +1,6 @@
 {
   "name": "sails-hook-organics",
-  "version": "0.15.0",
+  "version": "1.0.0",
   "description": "Standard library for Node/Sails applications. Hand-picked and maintained by the Sails.js core team.",
   "scripts": {
     "test": "npm run lint && npm run custom-tests",
@@ -36,11 +36,9 @@
     "async": "2.0.1",
     "bcryptjs": "2.3.0",
     "machinepack-fs": "^12.0.0",
-    "machinepack-http": "^6.0.0",
+    "machinepack-http": "^8.0.0",
     "machinepack-process": "^4.0.0-0",
     "machinepack-strings": "^6.1.0",
-    "mailcomposer": "2.1.0",
-    "mailgun-js": "0.13.1",
     "stripe": "5.4.0"
   },
   "main": "lib/sails-hook-organics.js",
