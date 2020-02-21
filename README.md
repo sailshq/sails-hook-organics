@@ -60,6 +60,9 @@ var randomString = sails.helpers.strings.random();
 ├── mailgun
 │   └── sendHtmlEmail
 │
+├── sendgrid
+│   └── sendHtmlEmail
+│
 ├── passwords
 │   ├── checkPassword
 │   └── hashPassword
