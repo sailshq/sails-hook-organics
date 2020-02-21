@@ -45,6 +45,7 @@ module.exports = _.reduce(LIBRARY_CONTENTS, function(expandedPgInfoBySlug, pgInf
         case 'gravatar':
         case 'passwords':
         case 'mailgun':
+        case 'sendgrid':
         case 'stripe':
           helpersByIdentity[helperIdentity] = require('../lib/private/'+pgSlug+'/'+helperIdentity);
           break;
