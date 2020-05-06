@@ -57,9 +57,6 @@ var randomString = sails.helpers.strings.random();
 ├── gravatar
 │   └── getAvatarUrl
 │
-├── mailgun
-│   └── sendHtmlEmail
-│
 ├── sendgrid
 │   └── sendHtmlEmail
 │
