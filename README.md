@@ -64,9 +64,13 @@ var randomString = sails.helpers.strings.random();
 │   ├── checkPassword
 │   └── hashPassword
 │
-└── stripe
-    ├── chargeCustomer
-    └── saveBillingInfo
+├── stripe
+│   ├── chargeCustomer
+│   └── saveBillingInfo
+│
+└── twilio
+    └── sendMessage
+
 ```
 
 

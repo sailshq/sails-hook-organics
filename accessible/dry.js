@@ -46,6 +46,7 @@ module.exports = _.reduce(LIBRARY_CONTENTS, function(expandedPgInfoBySlug, pgInf
         case 'passwords':
         case 'sendgrid':
         case 'stripe':
+        case 'twilio':
           helpersByIdentity[helperIdentity] = require('../lib/private/'+pgSlug+'/'+helperIdentity);
           break;
 
