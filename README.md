@@ -69,7 +69,7 @@ var randomString = sails.helpers.strings.random();
 │   └── saveBillingInfo
 │
 └── twilio
-    └── sendMessage
+    └── sendTextMessage
 
 ```
 
