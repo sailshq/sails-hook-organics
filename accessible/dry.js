@@ -44,6 +44,7 @@ module.exports = _.reduce(LIBRARY_CONTENTS, function(expandedPgInfoBySlug, pgInf
         case 'flow':
         case 'gravatar':
         case 'passwords':
+        case 'mailgun':
         case 'sendgrid':
         case 'stripe':
         case 'twilio':
