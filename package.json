@@ -33,7 +33,7 @@
   "license": "MIT",
   "dependencies": {
     "@sailshq/lodash": "^3.10.2",
-    "async": "2.0.1",
+    "async": "2.6.4",
     "bcryptjs": "2.3.0",
     "machinepack-fs": "^12.0.0",
     "machinepack-http": "^8.0.0",
